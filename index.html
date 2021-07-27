@@ -11,31 +11,33 @@
     
     <body>
     <header class="header">
-        <img class="header_img" src="asset/img/logo/Reservia@3x.png" alt="Reservia">
+        <div>
+        <img src="asset/img/logo/Reservia.svg" alt="Reservia" id="logo" />
+        </div>
+        <div class="nav_menu">
             <nav class="header_nav">
-            <a class="header_nav_link" href="#accommodations">Hébergement</a>
-            <a class="header_nav_link" href="#activity">Activités</a>
+                <a id="menu_hebergement" class="header_nav_link" href="#accommodations">Hébergement</a>
+                <a id="menu_activity" class="header_nav_link" href="#activity">Activités</a>
             </nav>
-            <a class="header_inscription" href="#registration">S'inscrire</a>
+            <a id="inscrire" href="#registration">S'inscrire</a>
+        </div>
     </header>
-        <main> 
-            <section id="part_one">
-                <div class="research">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p class="subtitle">En plein centre ville ou en pleine nature</p>
-                </div>
-
-                <div id="form">
-                    <i class="fa fa-map-marker-alt mapi"></i>
+    <main> 
+        <section id="part_one">
+            <div class="research">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="subtitle">En plein centre ville ou en pleine nature</p>
+            </div>
+            <div id="form">
+                <i class="fa fa-map-marker-alt mapi"></i>
                     <form>
-                        <input type="search" name="city_search" placeholder="Ville, Pays">
+                        <input type="search" name="city_search" placeholder="Marseille, France">
                     </form>
-                    <div class="button">
+                <div class="button">
                     <p class="search">Rechercher</p><i class="fa fa-search glass"></i>
-                    </div>
                 </div>
-        
-                <div id="filters">
+            </div>
+            <div id="filters">
                 <h3>Filtres</h3>
                     <div class="filtered_listing">
                         <div class="filtered">
@@ -55,13 +57,13 @@
                             <p  class="filter_subtitle">Animaux autorisés</p>
                         </div>       
                     </div>
-                </div>
-
-                <div id="info">
-                    <i class="fas fa-info point_i"></i>
-                    <p class="subtitle">Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
+            </div>
+            <div id="info">
+                <i class="fas fa-info point_i"></i>
+                <p class="subtitle">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </section>
+        
         <div id="part_left">
             <section class="housing" id="accommodations">
                 <h2>Hébergements à Marseille</h2>
@@ -109,8 +111,7 @@
                                 </div>    
                             </div>
                         </div>
-                    </div>
-                    <div class="habitat picture">
+                    </div> 
                         <div class="habitat_picture">
                             <img src="asset/img/picture/hotel_de_la_mer.jpg" alt="Photo de la chambre hôtel de la mer" />
                             <div class="habitat_description">
@@ -153,11 +154,10 @@
                                 </div>    
                             </div>
                         </div>
-                    </div>    
-                </div>  
+                </div>
                 <h3>Afficher plus</h3>      
             </section>
-                <aside id="part_right" class="housing">
+            <aside id="part_right" class="housing">
                     <div class="first_class">
                         <h2>Les plus populaires</h2>
                         <i class="fa fa-chart-line popular_icon"></i>
@@ -260,7 +260,6 @@
                 </div>
             </section>
         </div>
-    </section>
     </main>
     <footer id="foot_back">
         <div class="footer_section">
@@ -282,10 +281,5 @@
             </section>
         </div>
     </footer>
-
-
-
-
-
     </body>
 </html>
