@@ -521,7 +521,200 @@ h4 {
 /*   Media quieries */
 
 @media (min-width: 1180px) {
+    body{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .header{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "img . note" "nav nav nav";
+    }
+    #logo{
+        order: 0;
+    }
+    #registration{
+        order: 1;
+    }
+    .header_nav{
+        order: 2;
+        width: 100%;
+    }
+    .header_nav_link{
+        border-top: none;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    .header_nav_link:hover{
+        border-top: none;
+        border-bottom-color: #0065FC;
+    }
+    h1{
+        font-size: 22px;
+    }
+    #form{
+        width: 62%;
+        margin-top: -20px;
+    }
+    #filters{
+        width: 100%;
+        height: 105px;
+    }
+    .filtered{
+        margin-top: 10px;
+    }
+    .filtered_listing{
+        display: flex;
+        margin-left: -40px;
+        height: 7px;
+    }
+    #filters h3{
+        font-size: 19px;
+        position: absolute;
+        top: 198px;
+    }
+    #info{
+        position: inherit;
+        top: 60px;
+    }
+    /**************************************/
+    #card{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .housing{
+        height: 600px;
+        margin-left: -60px;
+        margin-right: -60px;
+        margin-top: 30px;
+        height: 600px;
+        margin-bottom: 692px;
+    }
+    h2{
+        font-size: 43px;
+        margin-top: 12px;
+        margin-bottom: 45px;
 
+    }
+    .best_picture{
+        height: 200%;
+        margin-top: 17px;
+        margin-bottom: 32px;
+    }
+    .best_description {
+        font-size: 29px;
+        margin-top: 21px;
+    }
+    .best_description p{
+        font-size: 18px;
+    }
+    #card section {
+        margin-top: 0px;
+    }
+    #card section {
+        width: 103%;
+        height: 563px;
+        margin-left: -50px;
+        margin-top: -10px;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        }
+    .first_class {
+        margin-top: 40px;
+    }
+    .first_class i {
+        font-size: 40px;
+        margin-top: 25px;
+    }
+    .housing h2{
+        margin-top: 12px;
+        margin-bottom: 45px;
+    }
+    .housing h3{
+        margin-top: 91em;
+        font-size: 30px;
+        margin-left: -15px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    .habitat{
+        flex-direction: column;
+    }
+    .habitat_picture{
+        width: 100%;
+        height: 431px;
+        margin-bottom: 82px;
+        border-radius: 41px
+    }
+    .habitat_description{
+        margin-top: 17px;
+    }
+    .habitat_description p {
+        font-size: 20px;
+        margin-top: -20px;
+    }
+    .habitat_picture img{
+        height: 63%;
+        border-radius: 40px 40px 0 0;
+    }
+    .habitat_description i{
+        font-size: 26px;
+    }
+    /******************Activity***************/
+
+    #activity{
+        margin-top: 131em;
+    }
+    .listing_activities, .column_one_100, .column_three_100 {
+        display: flex;
+        flex-direction: column;
+        width: 148%;
+    }
+    .column{
+        margin-bottom: 10px;
+    }
+    .column_100{
+
+    }
+    .column_one_100{
+        margin-bottom: 65px;
+    }
+
+    .column_two_100{
+        margin-bottom: 65px;
+    }
+
+    .column_three_100{
+        margin-bottom: 65px;
+    }
+    .column_60{
+        margin-bottom: 145px;
+        margin-top: 133px;
+    }
+    .column_40{
+        margin-bottom: 160px;
+        margin-top: -8px;
+    }
+    #activity img{
+        height: 310px;
+    }
+    .title_description h4{
+        margin-top: 90px;
+    }
+
+/*************Footer*************/
+
+    #foot_back {
+        height: 190%;
+        margin-top: 155em;
+        width: 100%;
+    }
+    .footer_section{
+        display: block;
+        flex-direction: column;
+    }
+}
 }
 
 @media (min-width: 480px) and (max-width: 950px) {
