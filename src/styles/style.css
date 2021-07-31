@@ -712,7 +712,7 @@ h4 {
         flex-direction: column;
     }
 }
-*/
+
 
 @media (min-width: 480px) and (max-width: 950px) {
     body{
@@ -769,7 +769,7 @@ h4 {
         position: inherit;
         top: 60px;
     }
-    /**************************************/
+
     #card{
         margin-top: 50px;
         display: flex;
@@ -855,7 +855,7 @@ h4 {
     .habitat_description i{
         font-size: 26px;
     }
-    /******************Activity***************/
+
 
     #activity{
         margin-top: 131em;
@@ -897,7 +897,7 @@ h4 {
         margin-top: 90px;
     }
 
-/*************Footer*************/
+
 
     #foot_back {
         height: 190%;
@@ -965,7 +965,7 @@ h4 {
         position: inherit;
         top: 60px;
     }
-    /**************************************/
+
     #card{
         margin-top: 50px;
         display: flex;
@@ -1051,7 +1051,7 @@ h4 {
     .habitat_description i{
         font-size: 26px;
     }
-    /******************Activity***************/
+
 
     #activity{
         margin-top: 131em;
