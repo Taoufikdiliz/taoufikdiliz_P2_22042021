@@ -501,7 +501,7 @@ h4 {
     min-width: 255px;
     width: 32px;
     margin-left: 1.7%;
-    margin-right: 10.5%;
+    margin-right: 21%;
 }
 #foot_back section h3 {
     margin-top: 35px;
@@ -514,10 +514,17 @@ h4 {
     font-weight: normal;
 }
 
-/******************************   Media quieries */
+/*          Media quieries          */
 
 @media (min-width: 1180px) {
-
+    .footer_section{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    #foot_back section{
+        margin-left: 4%;
+        margin-right: 5%;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 950px) {
@@ -578,7 +585,66 @@ h4 {
     }
 
     @media (max-width: 480px) {
-    body {
-        color: blue;
-    }
+        a{
+            font-size: 23px;
+        }
+        p{
+            font-size: 14px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        .header_nav_link:hover{
+            border-bottom-color: #0065FC;
+        }
+        .research p{
+          margin-top: -90px;
+        }
+        #form{
+        margin-top: -3px;
+        }
+        #filters h3{
+            top: 226px;
+        }
+        .filter_subtitle {
+            font-size: 15px;
+            margin-left: 54px;
+        }
+        #card{
+            flex-direction: column-reverse;
+            display: block;
+        }
+        #info {
+            top: 139px;
+        }
+        #card section{
+            margin-left: -53px;
+            display: none;
+        }
+        .housing h1 {
+            margin-top: 85px;
+            margin-left: -70px;
+            flex: none;
+        }
+        .best_picture img{
+            width: 42%;
+        }
+        .best_picture{
+            width: 390%;
+            margin-left: -70px;
+        }
+        .listing_activities, .column_one_10,.column_one_100,.column_three_100 {
+            display: contents;
+            flex-direction: column;
+        }
+        #activity img {
+            height: 210px;
+            width: 100%;
+        }
+        .column, .column_two_100{
+            width: 106%;
+            height: 281px;
+            margin-top: 58px;
+        }
+
 }
