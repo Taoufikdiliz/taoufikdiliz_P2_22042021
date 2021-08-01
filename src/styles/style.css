@@ -316,7 +316,7 @@ h4{
 }
 #card aside{
     width: 30%;
-    height: 569px;
+    height: 600px;
 }
 .first_class{
     display: flex;
@@ -510,7 +510,6 @@ h4{
 
 @media (min-width: 1180px){
     .footer_section{
-        text-align: center;
         flex-wrap: wrap;
     }
     #foot_back section{
