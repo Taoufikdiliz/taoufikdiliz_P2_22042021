@@ -16,7 +16,7 @@ h1{
     padding-bottom: 119px;
 }
 p{
-    font-size: 16px;
+    font-size: 18px;
 }
 .header{
     display: grid;
@@ -54,6 +54,7 @@ p{
     color: #0065FC;
     font-weight: 700;
     grid-area: note;
+    cursor: pointer;
 }
 main{
     position: relative;
