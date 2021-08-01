@@ -16,7 +16,7 @@ h1{
     padding-bottom: 119px;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
 }
 .header{
     display: grid;
@@ -557,7 +557,7 @@ h4{
         font-size: 18px;;
     }
     p{
-        font-size: 9px;
+        font-size: 11px;
     }
     #card section{
         width: 63%;
@@ -579,9 +579,6 @@ h4{
     @media (max-width: 480px){
         a{
             font-size: 23px;
-        }
-        p{
-            font-size: 14px;
         }
         h1{
             font-size: 30px;
