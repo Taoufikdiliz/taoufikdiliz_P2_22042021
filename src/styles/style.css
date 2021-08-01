@@ -234,7 +234,7 @@ h3 {
     margin: 52px;
 }
 #card section {
-    width: 57%;
+    width: 60%;
     height: 600px;
     margin-left: -53px;
 
@@ -289,7 +289,7 @@ h3 {
     overflow: hidden;
     height: 200px;
     border-radius: 0 0 10px 10px;
-    padding-left: 16px;
+    padding-left: 6px;
 }
 h4 {
     font-size: 13px;
@@ -329,7 +329,7 @@ h4 {
     justify-content: space-between;
 }
 .first_class i {
-    font-size: 22px;
+    font-size: 20px;
 }
 .popular_icon {
     color: black;
@@ -554,141 +554,30 @@ h4 {
         position: inherit;
         top: 60px;
     }
-    /* /************************************* */
-    
     h1{
         font-size: 18px;;
     }
-    #card section {
-        width: 60%;
+    p{
+        font-size: 9px;
+    }
+    #card section{
+        width: 63%;
         height: 563px;
         background: white;
         }
-        .housing{
-            margin-left: -60px;
-            margin-bottom: 692px;
-        }
-    
-    /*
-    
-
-
-
-
-
-    #card{
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column-reverse;
-    }
     .housing{
-        margin-left: -60px;
-        margin-bottom: 692px;
-    }
-    .best_description p{
-        font-size: 18px;
-    }
-    
-    .first_class {
-        margin-top: 40px;
-    }
-    .first_class i {
-        font-size: 40px;
-        margin-top: 25px;
-    }
-    .housing h2{
-        margin-top: 12px;
-        margin-bottom: 45px;
-        font-size: 43px;
-    }
-    .housing h3{
-        margin-top: 91em;
-        font-size: 30px;
-        margin-left: -15px;
-    }
-    h4{
-        font-size: 24px;
-    }
-    .habitat{
-        flex-direction: column;
-    }
-    .habitat_picture{
-        width: 100%;
-        height: 431px;
-        margin-bottom: 82px;
-        border-radius: 41px
-    }
-    .habitat_description{
-        margin-top: 17px;
-    }
-    .habitat_description p {
-        font-size: 20px;
-        margin-top: -20px;
+        width: 33%;
+        background: white;
     }
     .habitat_picture img{
-        height: 63%;
-        border-radius: 40px 40px 0 0;
+        height: 119%;
+        overflow: auto;
     }
-    .habitat_description i{
-        font-size: 26px;
-    }
-    /******************Activity***************/
-
-    #activity{
-        margin-top: 131em;
-    }
-    .listing_activities, .column_one_100, .column_three_100 {
-        display: flex;
-        flex-direction: column;
-        width: 148%;
-    }
-    .column{
-        margin-bottom: 10px;
-    }
-    .column_100{
-
-    }
-    .column_one_100{
-        margin-bottom: 65px;
+    .habitat_description{
+        display: grid;
     }
 
-    .column_two_100{
-        margin-bottom: 65px;
-    }
-
-    .column_three_100{
-        margin-bottom: 65px;
-    }
-    .column_60{
-        margin-bottom: 145px;
-        margin-top: 133px;
-    }
-    .column_40{
-        margin-bottom: 160px;
-        margin-top: -8px;
-    }
-    #activity img{
-        height: 310px;
-    }
-    .title_description h4{
-        margin-top: 90px;
-    }
-
-/*************Footer*************/
-
-    #foot_back {
-        height: 190%;
-        margin-top: 155em;
-        width: 100%;
-    }
-    .footer_section{
-        display: block;
-        flex-direction: column;
-    }
-}
-
-
-@media (max-width: 480px) {
+    @media (max-width: 480px) {
     body {
         color: blue;
     }
