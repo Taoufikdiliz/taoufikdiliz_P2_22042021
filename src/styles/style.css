@@ -13,7 +13,7 @@ h1{
     font-size: 22px;
     height: 27px;
     margin-top: 43px;
-    padding-bottom: 113px;
+    padding-bottom: 119px;
 }
 p{
     font-size: 16px;
@@ -76,11 +76,10 @@ main{
     font-weight: 500;
     margin-bottom: 45px;
 }
-.research p {
+.research p{
     margin-top: -110px;
-    margin-top: 23px;
 }
-.research.subtitle {
+.research.subtitle{
     position: absolute;
     top: 70px;
     margin-bottom: 12px;
@@ -117,8 +116,8 @@ input{
     display: block;
     margin: 0px 135px 0px 94px;
     height: 44px; 
-    width: 287px;
-    padding-left: 18px;
+    width: 324px;
+    padding-left: 34px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: 1px solid transparent;
@@ -168,6 +167,7 @@ h3 {
     align-items: center;
     inline-size: fit-content;
     margin-left: 39px;
+    margin-top: 10px;
     width: 100%;
     height: 37px;
     border-top: 2px solid #F2F2F2;
@@ -514,18 +514,13 @@ h4 {
     font-weight: normal;
 }
 
-/*   Media quieries */
+/******************************   Media quieries */
 
 @media (min-width: 1180px) {
 
 }
 
 @media (min-width: 480px) and (max-width: 950px) {
-    body{
-        color: green;
-        margin-left: 2px;
-        margin-right: 2px;
-    }
     .header{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "img . note" "nav nav nav";
@@ -539,28 +534,11 @@ h4 {
     .header_nav{
         order: 2;
         width: 100%;
-    }
-    .header_nav_link{
-        border-top: none;
         border-bottom: 3px solid #f2f2f2;
     }
     .header_nav_link:hover{
         border-top: none;
         border-bottom-color: #0065FC;
-    }
-    h1{
-        font-size: 22px;
-    }
-    #form{
-        width: 62%;
-        margin-top: -20px;
-    }
-    #filters{
-        width: 100%;
-        height: 105px;
-    }
-    .filtered{
-        margin-top: 10px;
     }
     .filtered_listing{
         display: flex;
@@ -576,44 +554,41 @@ h4 {
         position: inherit;
         top: 60px;
     }
-    /**************************************/
+    /* /************************************* */
+    
+    h1{
+        font-size: 18px;;
+    }
+    #card section {
+        width: 60%;
+        height: 563px;
+        background: white;
+        }
+        .housing{
+            margin-left: -60px;
+            margin-bottom: 692px;
+        }
+    
+    /*
+    
+
+
+
+
+
     #card{
         margin-top: 50px;
         display: flex;
         flex-direction: column-reverse;
     }
     .housing{
-        height: 600px;
         margin-left: -60px;
-        margin-right: -60px;
-        margin-top: 30px;
-        height: 600px;
         margin-bottom: 692px;
-    }
-    .best_picture{
-        height: 200%;
-        margin-top: 17px;
-        margin-bottom: 32px;
-    }
-    .best_description {
-        font-size: 29px;
-        margin-top: 21px;
     }
     .best_description p{
         font-size: 18px;
     }
-    #card section {
-        margin-top: 0px;
-    }
-    #card section {
-        width: 103%;
-        height: 563px;
-        margin-left: -50px;
-        margin-top: -10px;
-        display: flex;
-        flex-direction: column;
-        background: white;
-        }
+    
     .first_class {
         margin-top: 40px;
     }
