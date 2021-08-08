@@ -1,91 +1,145 @@
-html, body {
-	font-family: "Raleway", sans-serif;
-}
-
-/***************NAV************************/
-.part_nav {
-    height: 100px;
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    color: black;
 }
 a{
     text-decoration: none;
     color: black;
 }
-.size_nav {
-	width: 100%;
+h1{
+    font-size: 22px;
+    height: 27px;
+    margin-top: 43px;
+    padding-bottom: 119px;
 }
-.flex_nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+p{
+    font-size: 16px;
 }
-.nav_logo {
-    width: 120px;
-    height: 50px;
-    margin-bottom: 7px;
+.header{
+    display: grid;
+    width: 100%;
+    height: auto;
 }
-.size_lien {
-	margin-left: 60%;
+.header_nav_link:hover{
+    border-top: 3px solid #0065FC;
+    color: #0065fc;
 }
-.flex_nav_right{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#logo{
+    position: absolute;
+    height: 62px;
+    padding: 10px 32px;
+    grid-area: img;
 }
-.size_heber {
-	width: 140px;
-	height: 99px;
+.header_nav{
+    display: flex;
+    margin-right: 130px;
+    margin-left: auto;
+    place-content: space-evenly;
+    grid-area: nav;
 }
-.border_nav {
-	border-top: 1px solid blue;
+.header_nav_link{
+    padding: 2rem;
+    font-weight: 500;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
 }
-.border_nav_resp {
-	border-top: 1px solid transparent;
+#registration{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 700;
+    grid-area: note;
+    cursor: pointer;
 }
-.color_nav_act {
-    color: blue ;
+main{
+    position: relative;
+    margin: 11px auto;
+    margin-left: 2.7%;
+    margin-right: 1.7%;
+    margin-top: auto;
 }
-
-/***************Main******************/
-#part_one {
+#part_one{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    position: relative;
+    width: auto;
+    height: 376px;
 }
-h2 {
-    font-size: 22px;
+.research{
+    position: relative;
+    width: 100%;
+    height: 133px;
+    font-weight: 500;
+    margin-bottom: 45px;
 }
-#form {
+.research p{
+    margin-top: -110px;
+}
+.research.subtitle{
+    position: absolute;
+    top: 70px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+#form{
     display: flex;
-    align-items: left;
-    justify-content:start
+    position: relative;
+    justify-content: center;
+    border: 0px solid #F2F2F2;
+    width: 454px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: -30px;
 }
-.mapi {
+.mapi{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
+    position: absolute;
+    height: 44px;
+    width: 39px;
+    left: 0;
     border-radius: 16px 0px 0px 16px;
     background-color: #F2F2F2;
+    border-top: 0px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 0px solid transparent;
 }
-input {
-    padding-left: 21px;
+#form .fa{
+    color: black;
+}
+input{
+    display: block;
+    margin: 0px 135px 0px 94px;
+    height: 44px; 
+    width: 324px;
+    padding-left: 34px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
 }
 .button{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     width: 130px;
+    height: 44px;
+    right: -12px;
     background-color: #0065FC;
     border-radius: 0px 16px 16px 0px;
+    border: 0px solid transparent;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -96,56 +150,66 @@ input {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100px;
-    flex-wrap: wrap;
+    height: 121px;
 }
-h3 {
-margin-top: 110px;
+#filters .fa{
+    color: #0065FC;
+}
+h3{
+    font-size: 16px;
 }
 .filtered_listing{
-    display: contents;
-    height: 100px;
+    display: flex;
+    align-content: space-between;
     flex-wrap: wrap;
 }
 .filtered{
     display: flex;
     align-items: center;
-    height: 43px;
-    margin-right: 30px;
+    inline-size: fit-content;
+    margin-left: 39px;
+    margin-top: 10px;
+    width: 100%;
+    height: 37px;
     border-top: 2px solid #F2F2F2;
     border-right: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
-    border-radius: 32px;
+    border-radius: 18px;
+    background-color: white;
     cursor: pointer;
+    max-width: max-content;
 }
 .filter_icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 43px;
-    height: 43px;
+    width: 37px;
+    height: 37px;
     border-radius: 50%;
     background-color: #DEEBFF;
-    color: #0065fc;
+}
+.filtered .fa{
+    letter-spacing: 0px;
 }
 .filter_subtitle{
+    font-size: 16px;
     font-weight: 800;
-    margin: 42px;
-    margin-left: 8px;
+    margin: 0px 25px;
+    margin-left: 13px;
 }
 .filtered:hover{
     color: #0065FC;
     background-color: #DEEBFF;
-    border-top: 1px solid #0065FC;
-    border-right: 1px solid #0065FC;
-    border-bottom: 1px solid #0065FC;
-    border-left: 1px solid #0065FC;
+    border-top: 2px solid #0065FC;
+    border-right: 2px solid #0065FC;
+    border-bottom: 2px solid #0065FC;
+    border-left: 2px solid #0065FC;
 }
 #info{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 75px;
+    height: 55px;
 }
 .point_i{
     display: flex;
@@ -162,36 +226,23 @@ margin-top: 110px;
     display: block;
     margin-left: 14px;
 }
-/*****************Card************************/
 #card{ 
     display: flex;
     justify-content: space-between;
+    margin: 52px;
 }
 #card section{
-    width: 60%;
+    width: 62%;
     height: 600px;
-    margin-right: 25px;
-}
-#card aside{
-    width: 30%;
-    height: 600px;
-    margin-left: 25px;
+    margin-left: -53px;
 }
 .housing{
-    width: 30%;
+    width: 33%;
     padding: 40px;
+    margin-right: -60px;
+    margin-left: -11px;
     border-radius: 16px;
     background-color: #F2F2F2;
-}
-.habitat_listing{
-
-}
-.habitat_picture img{
-    display: block;
-    width: 100%;
-    height: 115px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
 }
 .housing h1{
     margin-top: -5px;
@@ -205,6 +256,7 @@ margin-top: 110px;
     height: 400px;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-top: -110px;
 }
 .habitat_picture{
     display: flex;
@@ -222,7 +274,13 @@ margin-top: 110px;
     transition: transform 100ms;
     transform: scale(1.1);
 }
-
+.habitat_picture img{
+    display: block;
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
 .habitat_description{
     background-color: white;
     overflow: hidden;
@@ -241,12 +299,12 @@ h4{
 .habitat_description span{
     font-weight: 600;
 }
-#card .fa, .fas{
+.fa, .fas{
     color:#0065fc;
     font-size: 0.8em;
     letter-spacing: -3px;
 }
-#card .fa, .fas.empty{
+.fa, .fas.empty{
     color:#f2f2f2;
     font-size: 0.8em;
     letter-spacing: -3px;
@@ -255,6 +313,10 @@ h4{
     margin-top: 97px;
     cursor: pointer;
     font-size: 16px;
+}
+#card aside{
+    width: 30%;
+    height: 600px;
 }
 .first_class{
     display: flex;
@@ -278,6 +340,7 @@ h4{
     align-content: space-between;
     height: 529px;
     width: 100%;
+    margin-top: -110px;
 }
 .best_picture{
     position: relative;
@@ -444,7 +507,7 @@ h4{
     overflow-wrap: normal;
     font-weight: normal;
 }
-/*
+
 @media (min-width: 1180px){
     .footer_section{
         flex-wrap: wrap;
@@ -576,10 +639,3 @@ h4{
             height: 28em;
         }
     }
-*/
-
-@media screen and (max-width: 1280px) {
-	.size_lien {
-		margin-left: 35%;
-	}
-}
