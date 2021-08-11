@@ -310,12 +310,13 @@ aside {
 }
 .best img {
     width: 130px;
-    height: 162%;
+    height: auto;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
 .best_picture {
     display: flex;
+    height: 153px;
     border: 1px solid white;
     background-color: white;
     border-radius: 15px;
@@ -419,7 +420,7 @@ footer li:hover{
     #registration{
         order: 1;
         margin-top: 25px;
-        font-size: 30px;
+        font-size: 25px;
     }
     .header_nav{
         justify-content: space-around;
@@ -428,149 +429,60 @@ footer li:hover{
         border-bottom: 3px solid #f2f2f2;
     }
     #logo {
-        height: 76px;
+        height: 58px;
     }
     #filters {
         flex-direction: column;
         align-items: end;
     }
     .best_picture {
-    height: 193px;
+    height: 169px;
+    }
 }
-}
-
-
-
-
-
-
-
-
-/*******Debut
-@media (max-width: 1240px){
-    body {
-        width: 100%;
-        margin: auto;
-    }
-    main {
-        margin-top: 40px;
-    }
-    h2 {
-        font-size: 49px;
-        margin-top: 82px;
-    }
-    main h2 {
-        font-size: 32px;
-        margin-top: 53px;
-    }
-    .header{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: "img . note" "nav nav nav";
-        margin-top: 40px;
-        justify-content: space-around;
-    }
-    #logo {
-      height: 85px;
-      margin-left: -30px;
-  }
-    #registration{
-        order: 1;
-        margin-top: 25px;
-        font-size: 30px;
-    }
-    .header_nav{
-        margin-top: 70px;
-        order: 2;
-        width: 100%;
-        border-bottom: 3px solid #f2f2f2;
-    }
-    .header_nav_link:hover{
-        border-top: none;
-        border-bottom-color: #0065FC;
-        font-size: 30px;
-    }
-    .filtered_listing{
-        display: flex;
-        margin-left: -30px;
-        height: 7px;
-    }
-    button p {
-        font-size: 16px;
-    }
-    #filters {
-        margin: 55px 25px;
-    }
-    #filters h3{
-        font-size: 26px;
-        position: absolute;
-        top: 304px;
-    }
-    #info{
-        position: inherit;
-        top: 60px;
-    }
-    h1{
-        font-size: 18px;;
-    }
-    p{
-        font-size: 11px;
-    }
-    #card section{
-        width: 63%;
-        height: 563px;
-        background: white;
-        }
-    .housing{
-        width: 33%;
-        background: white;
-    }
-    .habitat_picture img{
-        overflow: auto;
-    }
-    .habitat_description{
-        display: grid;
-    }
-
 
 @media (max-width: 1100px) {
-    body {
-      width: 97%;
-      margin: auto;
-    }
-    #accomodation {
-        width: 55%;
-    }
-    aside {
-        width: 35%;
-        height: 900px;
+    #activity img {
+        height: 193px;
+        width: 100%;
     }
     .listing_activities {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        height: 450px;
-        align-content: space-between;
+        flex-direction: column;
     }
-    .column_60_40, .column_two_40_60 {
-        flex-direction: row;
-        width: 65%;
-        justify-content: space-between;
+    .img_100, .column_60, .column_40, .column {
+        margin-top: 20px;
     }
-    .listing_activities img {
-        width: 100%;
-        height: 152px;
-    }
-    footer {
-        margin: 20px 0 0 0;
-    }
-    .footer_accommodation, .footer_assistance {
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
 }
-@media (max-width: 984px) {
+
+@media (max-width: 950px) {
     #info {
-        top: 79px;
+        margin-top: 100px;
     }
+    main {
+        margin: 0;
+    }
+    #accomodation {
+        width: 54%;
+    }
+    aside {
+        width: 32%;
+    }
+    .habitat_listing {
+        display: initial;
+    }
+    .habitat_listing img {
+    width: 100%;
+    height: 136px;
+    }
+    .best_picture {
+    height: 231px;
+    }
+    .footer_about, .footer_accommodation, .footer_assistance {
+    font-size: 14px;
+    margin-right: -100px;
+    }
+/**** A réglé *****/
+
 @media (max-width: 744px) {
     h2 {
         font-size: 29px;
