@@ -34,21 +34,22 @@ p{
 }
 #logo{
     position: absolute;
-    height: 116px;
+    height: 15%;
     padding: 14px 40px;
     grid-area: img;
 }
 .header_nav{
     display: flex;
-    margin-right: 320px;
+    margin-right: 185px;
     margin-left: auto;
-    font-size: 35px;
+    font-size: 23px;
     place-content: space-evenly;
     grid-area: nav;
 }
 .header_nav_link{
-    padding: 2rem;
-    font-weight: 500;
+    padding: 4rem;
+    font-weight: 600;
+    margin-left: -50px;
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
 }
@@ -56,9 +57,9 @@ p{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 35px;
     margin-right: 6.7%;
     color: #0065FC;
+    font-size: 23px;
     font-weight: 700;
     grid-area: note;
     cursor: pointer;
@@ -214,7 +215,7 @@ h3{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 55px;
+    height: 100px;
     margin-left: 1.7%;
 }
 .point_i{
@@ -309,7 +310,7 @@ aside {
 }
 .best img {
     width: 130px;
-    height: 130px;
+    height: 162%;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
@@ -406,6 +407,46 @@ footer li:hover{
 
 /* Media quieries */
 
+@media (max-width: 1240px) {
+    body {
+        width: 100%;
+    }
+    .header{
+        grid-template-areas: "img . note" "nav nav nav";
+        margin-top: 40px;
+        justify-content: space-around;
+    }
+    #registration{
+        order: 1;
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    .header_nav{
+        justify-content: space-around;
+        order: 2;
+        width: 100%;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    #logo {
+        height: 76px;
+    }
+    #filters {
+        flex-direction: column;
+        align-items: end;
+    }
+    .best_picture {
+    height: 193px;
+}
+}
+
+
+
+
+
+
+
+
+/*******Debut
 @media (max-width: 1240px){
     body {
         width: 100%;
@@ -525,8 +566,15 @@ footer li:hover{
         margin-left: auto;
         margin-right: auto;
     }
-}/*
-@media (max-width: 1100px) {
+}
+@media (max-width: 984px) {
+    #info {
+        top: 79px;
+    }
+@media (max-width: 744px) {
+    h2 {
+        font-size: 29px;
+    }
     #filters {
         flex-direction: column;
         align-items: flex-start;
@@ -566,11 +614,6 @@ footer li:hover{
         padding-top: 103em;
     }
 }
-*/
-@media (max-width: 984px) {
-    #info {
-        top: 79px;
-    }
 
 @media (max-width: 700px) {
 
@@ -626,8 +669,6 @@ footer li:hover{
         margin-left: -4.3% ;
     }
 }
-
-/****************** A reglé *************************/
 @media (max-width: 554px) {
     #form {
         width: 90%;
@@ -641,3 +682,4 @@ footer li:hover{
         margin-left: 10px;
     }
 }
+@media (max-width 546px)
