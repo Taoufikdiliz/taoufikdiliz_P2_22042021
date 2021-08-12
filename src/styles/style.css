@@ -34,7 +34,7 @@ p{
 }
 #logo{
     position: absolute;
-    height: 15%;
+    height: 13%;
     padding: 14px 40px;
     grid-area: img;
 }
@@ -42,7 +42,7 @@ p{
     display: flex;
     margin-right: 185px;
     margin-left: auto;
-    font-size: 23px;
+    font-size: 19px;
     place-content: space-evenly;
     grid-area: nav;
 }
@@ -59,7 +59,7 @@ p{
     justify-content: flex-end;
     margin-right: 6.7%;
     color: #0065FC;
-    font-size: 23px;
+    font-size: 19px;
     font-weight: 700;
     grid-area: note;
     cursor: pointer;
@@ -151,7 +151,7 @@ input{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 121px;
+    height: 196px;
     margin-left: 1.7%;
 }
 #filters h3 {
@@ -161,7 +161,7 @@ input{
     color: #0065FC;
 }
 h3{
-    font-size: 16px;
+    font-size: 21px;
 }
 .filtered_listing{
     display: flex;
@@ -359,19 +359,19 @@ aside {
     object-fit: cover;
 }
 .img_100 img {
-    width: 270px;
+    width: 250px;
     height: 400px;
 }
 .column_60 img {
-    width: 270px;
+    width: 260px;
     height: 160px;
 }
 .column img {
-    width: 270px;
-    height: 140px;
+    width: 260px;
+    height: 160px;
 }
 .column_40 img {
-    width: 270px;
+    width: 260px;
     height: 140px;
 }
 .img_100, .column_60, .column_40, .column {
@@ -406,9 +406,9 @@ footer li:hover{
     text-decoration: underline;
 }
 
-/* Media quieries */
+/*ipad Pro 1024px*/
+@media (max-width: 1120px) {
 
-@media (max-width: 1240px) {
     body {
         width: 100%;
     }
@@ -431,121 +431,77 @@ footer li:hover{
     #logo {
         height: 58px;
     }
-    #filters {
-        flex-direction: column;
-        align-items: end;
-    }
-    .best_picture {
-    height: 169px;
-    }
-}
-
-@media (max-width: 1100px) {
-    #activity img {
-        height: 193px;
-        width: 102%;
-    }
-    .listing_activities {
-        flex-direction: column;
-    }
-    .img_100, .column_60, .column_40, .column {
-        margin-top: 20px;
-    }
-    
-}
-
-@media (max-width: 950px) {
-    #info {
-        margin-top: 180px;
-    }
-    .header_nav {
-        margin-left: 64px;
-    }
-    main {
-        margin: 0;
-    }
-    aside, #accomodation {
-        margin-top: 76px;
-    }
-    #accomodation {
-        width: 54%;
-    }
-    aside {
-        width: 32%;
-    }
-    .habitat_listing {
-        display: initial;
-    }
-    .habitat_listing img {
-    width: 100%;
-    height: 136px;
-    }
-    .best_picture {
-    height: 231px;
-    }
-    .footer_about, .footer_accommodation, .footer_assistance {
-    font-size: 14px;
-    margin-right: -100px;
-    }
-/**** A réglé *****/
-
-@media (max-width: 759px) {
     h2 {
-        font-size: 25px;
+        font-size: 32px;
     }
-    main {
-        flex-direction: column-reverse;
-    }
-    aside, #accomodation {
-        width: 109.3%;
-        height: auto;
-    }
-    .best img {
-        width: 295px;
-    }
-    .best_description {
-        font-size: 116%;
-    }
-    .habitat_listing {
-        justify-content: space-between;
-        margin: 51px;
-    }
-    .best img {
-        width: 258px;
-    }
-    .column_60_40, .column_two_40_60 {
+    #filters {
+        margin-top: 50px;
         flex-direction: column;
-        width: auto;
-    }
-    .listing_activities {
         display: block;
     }
-    .listing_activities img {
-        height: 293px;
-        height: 174px;
+    #info {
+        margin-top: 50px;
     }
-    .best_picture, .habitat_listing {
-        height: 231px;
+    main {
+        margin-top: 25px;
     }
-    #activity img {
-        width: 114%;
+    #form {
+        margin-top: -20px;
     }
     footer {
-        flex-direction: column;
+        margin-left: -1.7%;
     }
-    .footer_about, .footer_accommodation, .footer_assistance {
-        font-size: 14px;
-        margin-left: 40px;
 }
 
-@media (max-width: 559px) {
-    h2 {
-        font-size: 34px;
+@media (max-width: 1040px) {
+    main {
+        margin-top: 125px;
+        width: 100%;
     }
+    h2 {
+    font-size: 152%;
+    }
+    #accomodation h2 {
+    margin-left: 0.9%;
+    }
+    .habitat_listing img {
+        width: 294px;
+    }
+    .best_picture {
+        height: 202px;
+    }
+    .listing_activities {
+        flex-direction: column;
+    }
+    .listing_activities img {
+        width: 103%;
+        height: 250px;
+    }
+    #activity h4 {
+        margin-left: 30px;
+        font-size: 21px;
+        margin-bottom: 63px;
+    }
+}
+@media (max-width: 999px) {
+    .habitat {
+        width: 100%;
+    }
+    .habitat_listing img {
+        width: 100%;
+        height: 154px;
+    }
+}
+
+/*ipad 768px*/
+@media (max-width: 805px) {
+
     #form {
         width: 90%;
         justify-content: space-between;
-        margin-top: 30px;
+    }
+    #info {
+        align-items: flex-start;
     }
     .mapi {
         font-size: 28px;
@@ -559,28 +515,104 @@ footer li:hover{
         margin-bottom: 19px;
         font-size: 24px;
     }
+    .search {
+        display: none;
+    }
+    .button {
+        border-radius: 16px 16px 16px 16px;
+        width: 74px;
+        height: 71px;
+    }
     .part_search {
         margin-right: 10px;
         margin-left: 10px;
-    }
-    p.search {
-        display: none;
     }
     .glass {
         display: block;
         font-size: 28px;
         color: white !important;
     }
-    .button {
-    width: 74px;
-    height: 71px;
-    border-radius: 16px 16px 16px 16px;
+    main {
+        flex-direction: column-reverse;
+    }
+    h4 {
+        font-size: 27px;
+    }
+    p {
+        margin-top: -14px;
+        font-size: 25px;
+    }
+    .best_picture {
+        height: 210px;
+        width: 97%;
+    }
+    .best img {
+        width: 330px;
+    }
+    aside {
+        width: 100%;
+    }
+    #accomodation {
+        width: 100%;
+    }
+    .footer_accommodation, .footer_assistance, .footer_about {
+        font-size: 21px;
+        margin-left: 50px;
+        line-height: 1.8em;
+        font-size: 20px;
+    }
 }
-    aside, #accomodation {
-        width: 115.3%;
-        margin-top: 184px;
+
+/*Surface Duo 540 px*/
+@media (max-width: 580px) {
+    #info {
+        margin-top: 159px;
+    }
+    main {
+        margin-top: 250px;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+    h4 {
+        font-size: 23px;
+    }
+    .best img {
+        width: 243px;
+    }
+
+
 }
 
-@media (max-width: 530px) {
+/*iphone 6/7/8 Plus / Pixel 2/Pixel 2XL*/
+@media (max-width: 414px) {
+
+}
 
 
+/*iphone 6/7/8/X*/
+@media (max-width: 375px) {
+
+
+}
+
+
+
+/*Moto G4 & Galaxy S5*/
+@media (max-width: 360px) {
+
+}
+
+/*iphone 5/SE*/
+
+@media (max-width: 280px) {
+
+}
+
+
+
+/*galaxie fold 280*/
+
+@media (max-width: 280px) {
+
+}
