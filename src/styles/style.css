@@ -582,7 +582,7 @@ footer li:hover{
         margin-top: 177px;
     }
     #registration {
-        margin-right: 39px;
+        margin-right: 60px;
     }
     .header_nav {
         justify-content: center;
@@ -638,6 +638,9 @@ footer li:hover{
         margin-left: 20%;
         margin-top: 36px;
     }
+    #registration {
+        margin-right: -2px;
+    }
     #info {
         padding-top: 53%;
     }
@@ -650,3 +653,4 @@ footer li:hover{
     footer {
         width: 165%;
     }
+}
