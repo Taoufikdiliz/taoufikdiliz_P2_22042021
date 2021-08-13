@@ -250,7 +250,7 @@ main {
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 60%;
+    width: 54%;
     padding: 0 20px 10px 20px;
 }
 #accomodation h2 {
@@ -303,7 +303,7 @@ aside {
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 30%;
+    width: 37%;
     padding: 0 20px 10px 20px;
 }
 .first_class {
@@ -472,20 +472,15 @@ footer li:hover{
 
 @media (max-width: 1040px) {
     main {
-        margin-top: 125px;
-        width: 100%;
+        margin-top: 110px;
+        padding-left: 0;
     }
     h2 {
     font-size: 152%;
     }
-    #accomodation h2 {
-    margin-left: 0.9%;
-    }
     .habitat_listing img {
-        width: 294px;
-    }
-    .best_picture {
-        height: 202px;
+        width: 245px;
+        height: 129px;
     }
     .listing_activities {
         flex-direction: column;
@@ -495,41 +490,31 @@ footer li:hover{
         height: 250px;
     }
     #activity h4 {
-        margin-left: 30px;
         font-size: 21px;
         margin-bottom: 63px;
     }
+    footer {
+        margin: 0;
+        flex-direction: column;
+        height: 32em;
+        font-size: 26px;
+    }
+    footer h3 {
+        font-size: 30px;
+    }
+    .footer_accommodation, .footer_assistance {
+        margin-left: 50px;
+    }
 }
 @media (max-width: 999px) {
-    .habitat {
-        width: 100%;
-    }
-    .habitat_listing img {
-        width: 100%;
-        height: 154px;
-    }
-}
-
-/*ipad 768px*/
-@media (max-width: 805px) {
-
-    #form {
-        width: 90%;
-        justify-content: space-between;
-    }
-    #info {
-        align-items: flex-start;
-    }
     .mapi {
-        font-size: 28px;
-        width: 68px;
-        height: 72px;
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
     }
     input {
-        width: 71%;
-        height: 74px;
-        margin-top: 0;
-        margin-bottom: 19px;
+        width: 100%;
+        height: 60px;
         font-size: 24px;
     }
     .search {
@@ -537,8 +522,10 @@ footer li:hover{
     }
     .button {
         border-radius: 16px 16px 16px 16px;
-        width: 74px;
-        height: 71px;
+        width: 60px;
+        height: 60px;
+        margin-right: -100px;
+        margin-left: 68px;
     }
     .part_search {
         margin-right: 10px;
@@ -546,149 +533,120 @@ footer li:hover{
     }
     .glass {
         display: block;
-        font-size: 28px;
+        font-size: 24px;
         color: white !important;
     }
+    .habitat_listing {
+        flex-direction: column;
+}
+    .habitat_listing img {
+        width: 100%;
+}
+    #accomodation {
+        width: 52%;
+    }
+    .footer_about {
+        margin-top: 4%;
+    }
+}
+
+@media (max-width: 840px) {
     main {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse;  
     }
-    h4 {
-        font-size: 27px;
-    }
-    p {
-        margin-top: -14px;
-        font-size: 25px;
-    }
-    .best_picture {
-        height: 210px;
+    aside,#accomodation {
         width: 98%;
     }
-    .best img {
-        width: 330px;
-    }
-    aside {
-        width: 97%;
-        border-radius: 0;
-        margin-left: -10px;
-        margin-top: 113px;
-    }
     #accomodation {
-        width: 93%;
         background-color: white;
     }
-    footer {
-        flex-direction: column;
+    .best img {
+        width: 35%;
     }
-    .footer_accommodation, .footer_assistance, .footer_about {
-        font-size: 21px;
-        margin-left: 50px;
-        line-height: 1.8em;
+    .best_description {
         font-size: 20px;
     }
-}
-
-/*Surface Duo 540 px*/
-@media (max-width: 580px) {
-    #info {
-        margin-top: 159px;
+    .habitat_listing img {
+        height: 164px;
     }
-    main {
-        margin-top: 250px;
-    }
-    h2 {
-        font-size: 1.6em;
-    }
-    h4 {
+    .position_text {
         font-size: 23px;
     }
-    .best img {
-        width: 243px;
-    }
 }
 
-/*iphone 6/7/8 Plus / Pixel 2/Pixel 2XL*/
-@media (max-width: 414px) {
-    .header_nav {
-        justify-content: flex-end;
-        font-size: 29px;
-        margin-left: -9px
-    }
-    #logo {
-        width: 150px;
-        margin-top: -20px;
+@media (max-width: 580px) {
+    #info {
+        padding-top: 12%;
+}
+    main {
+        margin-top: 177px;
     }
     #registration {
-        margin-top: 10px;
-        margin-right: -80px;
-    }
-    .button, .mapi {
-        width: 76px;
-        height: 76px;
-        margin-right: -10%;
-    }
-    input {
-        width: 100%;
-        height: 74px;
-        margin-left: 83px;
-        font-size: 24px;
-    }
-    #form {
-        width: 112%;
-    }
-    #info {
-        margin-top: 208px;
-    }
-    aside, #accomodation, #activity {
-        width: 113%;
-    }
-    footer {
-        width: 110%;
-    }
-}
-
-/*iphone 6/7/8/X*/
-@media (max-width: 375px) {
-    body {
-        display: grid;
-    }
-    h2 {
-        font-size: 45px;
+        margin-right: 39px;
     }
     .header_nav {
         justify-content: center;
-        margin-left: 41px;
     }
-    .button, .mapi {
-        margin-right: 100px;
+    footer {
+        font-size: 17px;
+        margin-top: 20%;
     }
-    #form {
-        margin-top: 96px
+    footer h3 {
+        font-size: 19px;
     }
-    #info {
-        margin-top: 136px
+    input {
+        width: 71%;
     }
-    #filters {
-        width: 74%;
+    .button {
+    margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_nav {
+        margin-left: 9%;
+    }
+    .filtered_listing {
+        flex-direction: column;
     }
     .filtered {
-        margin-right: 0;
+        width: 100%;
+        max-width: initial;
+        margin-bottom: 21px;
     }
-    .listing_activities {
-        flex-direction: column;
-        width: 104%;
+    #info {
+        padding-top: 41%;
+    }
+    main {
+        margin-top: 318px;
+    }
+    aside, #accomodation {
+        width: 123%;
+    }
+    section#activity {
+        width: 127%;
+    }
+    footer {
+        margin-left: -20px;
+        width: 133%;
+    }
 }
 
-/*Moto G4 & Galaxy S5*/
-@media (max-width: 360px) {
-
-}
-
-/*iphone 5/SE & Galaxie fold 280 */
-@media (max-width: 280px) {
-    #filters h3 {
-        font-size: 29px;
+@media (max-width: 380px) {
+    .header_nav {
+        font-size: 24px;
+        margin-left: 20%;
+        margin-top: 36px;
     }
-    .listing_activities {
-        width: 104%;
+    #info {
+        padding-top: 53%;
     }
-}
+    aside, #accomodation {
+        width: 149%;
+    }
+    #activity {
+        width: 159%;
+    }
+    footer {
+        width: 165%;
+    }
