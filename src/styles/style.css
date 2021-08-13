@@ -383,6 +383,15 @@ aside {
     transition: transform 100ms;
     transform: scale(1.1);
 }
+.img_100:hover, .column:hover {
+    transition: transform 100ms;
+    transform: scale(1.1);
+}
+.column_40:hover, .column_60:hover {
+    transition: transform 100ms;
+    transform: scale(1.1);
+}
+
 /****** Footer ************/
 
 footer {
@@ -603,7 +612,7 @@ footer li:hover{
     }
     #registration {
         margin-top: 10px;
-        margin-right: 50px;
+        margin-right: -80px;
     }
     .button, .mapi {
         width: 76px;
