@@ -15,22 +15,22 @@ h1{
     padding-bottom: 119px;
 }
 h2, .popular_icon {
-    font-size: 27px;
+    font-size: 23px;
 }
 h3 {
-    font-size: 21px;
+    font-size: 18px;
 }
 h4 {
-    font-size: 17px;
-    font-weight: 800;
+    font-size: 15px;
+    font-weight: 800; 
 }
 p{
-    font-size: 20px;
+    font-size: 15px;
 }
 .header{
     display: grid;
     width: 100%;
-    height: auto;
+    height: 100px;
 }
 .header_nav_link:hover{
     border-top: 3px solid #0065FC;
@@ -38,8 +38,8 @@ p{
 }
 #logo{
     position: absolute;
-    height: 18%;
-    padding: 27px 45px;
+    height: 9%;
+    padding: 41px 30px;
     grid-area: img;
 }
 .header_nav{
@@ -72,7 +72,7 @@ p{
 /* Bouton recherche */
 #part_one {
     width: 100%;
-    padding: 45px;
+    padding: 30px;
 }
 #form {
     display: flex;
@@ -119,6 +119,7 @@ input:focus{
     background-color: #0065fc;
     border-radius: 0px 16px 16px 0px;
     color: white;
+    font-weight: 600;
 }
 
 /* Les filtres */
@@ -178,7 +179,7 @@ input:focus{
 
 /* Info */
 
-#info{
+#info{ 
     display: flex;
     align-items: center;
     width: 100%;
@@ -206,8 +207,9 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 100%;
-    margin-left: 45px;
+    width: 95%;
+    height: 58em;
+    margin-left: 35px;
 }
 
 /* Partie hébergement et populaire */
@@ -216,25 +218,31 @@ main {
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 16px;
-    width: 58%;
+    width: 61%;
+    height: 52em;
+    padding-left: 15px;
+    padding-right: 30px;
 }
 
 /* Partie hébergement */
 
 #accomodation h2, aside h2 {
-    padding: inherit;
-    margin: 45px 0px 45px 15px;
+    margin: 45px 0px 45px 10px;
+}
+#accomodation h3 {
+        margin-top: 30px;
+        margin-left: 20px;
 }
 #accomodation p {
     margin: -12px 0px 18px 0px;
 }
 .habitat_listing {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .habitat_listing img {
-    width: 250px;
+    width: 220px;
     height: 130px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
@@ -242,32 +250,35 @@ main {
 .habitat_picture {
     border: 1px solid white;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 16px;
     padding: 2px 2px 10px 2px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px #b4b3b3;
 }
-.habitat_picture:hover{
+.habitat_picture:hover {
     transition: transform 100ms;
     transform: scale(1.1);
 }
 
 /* Aside */
+
 aside {
     margin-top: 30px;
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 37%;
-    padding: 0px 0px 0px 20px;
+    width: 33%;
+    height: 52em;
 }
 aside h2 {
-    margin-left: 0px;
+    margin-left: 25px;
+}
+.best {
+    margin-left: 25px;
 }
 .best_picture {
     display: flex;
-    width: 93%;
-    padding: 2px 10px 2px 2px;
+    width: 95%;
     margin-bottom: 20px;
     box-shadow: 0 0 10px white;
     border: 1px solid white;
@@ -282,7 +293,7 @@ aside h2 {
     font-weight: 600;
 }
 .best img {
-    width: 35%;
+    width: 40%;
     height: 185px;
     border-radius: 16px 0 0 16px;
     object-fit: cover;
@@ -294,7 +305,9 @@ aside h2 {
 }
 .best_description, .position_text {
     padding: 5px 0px 1px 15px;
-    font-size: 18px;
+}
+.best_description .star {
+    margin-top: 65px;
 }
 
 /* Etoiles */
@@ -309,315 +322,322 @@ aside h2 {
 }
 
 /******* Activites *************/
-#activity h2 {
-    margin-left: 1.7%;
+
+#activity {
+    margin-left: 35px;
+    width: 91%;
 }
 #activity h4 {
-    margin-left: 13px;
-    font-size: 13px;
+    margin-left: 25px;
 }
 .listing_activities {
     display: flex;
     justify-content: space-between;
-    padding: 1.7%;
+    width: 100%;
+    margin-top: 35px;
 }
-.column_60_40, .column_two_40_60 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.listing_activities img:hover {
+    transition: transform 100ms;
+    transform: scale(1.1);
 }
 .listing_activities img {
-    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 400px;
     object-fit: cover;
 }
-.img_100 img {
-    width: 250px;
-    height: 400px;
+.column_one_100, .column_60_40, .column_three_100, .column_two_40_60 {
+    width: 23%;
+    margin-right: -45px ;
+}
+.column_one_100 img, .column_60_40 img, .column_three_100 img, .column_two_40_60 img {
+    border-radius: 16px 16px 0px 0px;
 }
 .column_60 img {
-    width: 260px;
-    height: 160px;
+    height: 155px;
 }
-.column img {
-    width: 260px;
-    height: 160px;
+.column_40 {
+    border: 1px solid #f2f2f2;
+    border-radius: 16px;
 }
 .column_40 img {
-    width: 260px;
-    height: 140px;
+    height: 143px;
 }
-.img_100, .column_60, .column_40, .column {
+.column {
+    border: 1px solid #F2F2F2;
+}
+.column img {
+    height: 130px;
+}
+.col_55 {
+    margin-bottom: 17px;
     border: 1px solid #f2f2f2;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px #f2f2f2;
 }
-.habitat:hover {
-    transition: transform 100ms;
-    transform: scale(1.1);
+.col_55 img {
+    height: 190px;
 }
-.img_100:hover, .column:hover {
-    transition: transform 100ms;
-    transform: scale(1.1);
-}
-.column_40:hover, .column_60:hover {
-    transition: transform 100ms;
-    transform: scale(1.1);
+.img_100, .column_60 {
+    border: 1px solid #f2f2f2;
+    border-radius: 16px;
+    margin-bottom: 40px;
 }
 
 /****** Footer ************/
 
 footer {
-    margin: 35px 0 0 -20px;
-    background-color: #f2f2f2;
     display: flex;
     width: 100%;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    background-color: #f2f2f2;
+    font-size: 19px;
+    line-height: 35px;
+}
+.footer_about {
+    margin-left: 45px;
 }
 footer ul {
     list-style-type: none;
-    padding-left: 0;
+    margin-left: -40px;
 }
-.footer_about {
-    margin-left: 50px;
-    line-height: 1.8em; 
-}
-.footer_accommodation, .footer_assistance {
-    margin-left: 195px;
-    line-height: 1.8em;
+.footer_accommodation {
+    margin-left: 240px;
+    margin-right: 240px;
 }
 footer li:hover{
     text-decoration: underline;
 }
 
-/*ipad Pro 1024px*/
-@media (max-width: 1120px) {
+
+
+        /* MEDIA QUIERIES */
+/* ipad Pro 1240px */
+
+@media (max-width: 1240px) {
     body {
-        width: 100%;
+        width: 96%;
+    }
+    #logo {
+        padding: 0px 30px;
+    }
+    #registration{
+        order: 1;
+        margin-top: 25px;
+        margin-right: -20px;
+        font-size: 25px;
     }
     .header{
         grid-template-areas: "img . note" "nav nav nav";
         margin-top: 40px;
         justify-content: space-around;
     }
-    #registration{
-        order: 1;
-        margin-top: 25px;
-        font-size: 25px;
-    }
     .header_nav{
+        width: 100%;
         justify-content: space-around;
         order: 2;
-        width: 100%;
-        border-bottom: 3px solid #f2f2f2;
+        border-bottom: 3px solid #ddd0d0;
+    }
+    #part_one {
+        margin-top: 140px;
     }
     .header_nav_link:hover{
         border-top: none;
         border-bottom: 3px solid #0065FC;
         color: #0065fc;
     }
-    #logo {
-        height: 58px;
-    }
-    h2 {
-        font-size: 32px;
-    }
     #filters {
-        margin-top: 50px;
-        flex-direction: column;
-        display: block;
-    }
-    #info {
-        margin-top: 50px;
+        display: contents;
     }
     main {
-        margin-top: 25px;
+        height: 68em;
     }
-    #form {
-        margin-top: -20px;
+    .habitat_listing {
+        padding: 25px;
+        margin-top: -35px;
     }
-    footer {
-        margin-left: -1.7%;
+    .habitat_listing img {
+        width: 282px;
+    }
+    #accomodation, aside {
+        height: 65em;
+    }
+    #accomodation h2, aside h2 {
+        margin: 45px 0px 45px 25px;
+    }
+    .best {
+        margin-top: -10px;
+        }
+    .footer_accommodation {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+    #accomodation {
+        width: 64%;
+        padding: 0;
     }
 }
 
-@media (max-width: 1040px) {
-    main {
-        margin-top: 110px;
-        padding-left: 0;
+@media (max-width: 1090px) {
+    .header_nav {
+        font-size: 21px;
     }
-    h2 {
-    font-size: 152%;
+    aside h2, #accomodation h2, #activity h2 {
+        font-size: 30px;
+        letter-spacing: 4px;
+        margin-bottom: 48px;
+    }
+    #accomodation h2 {
+        margin-top: 90px;
+    }
+    main {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 680px;
+        margin-left: 28px;
+    }
+    #accomodation {
+        width: 100%;
+        margin-left: -10px;
+        background: white;
+    }
+    #accomodation h3 {
+        margin-left: 15px;
+        margin-bottom: 70px;
+        font-size: 23px;
+    }
+    aside {
+        width: 100%;
+        padding: 0px 40px;
+        margin-left: -50px;
+        margin-bottom: -25px;
+        border-radius: 0;
+    }
+    aside h4, .habitat_description {
+        font-size: 18px;
     }
     .habitat_listing img {
-        width: 245px;
-        height: 129px;
+        width: 425px;
+    }
+    .best_picture {
+        width: 97%;
+    }
+    #activity {
+        margin-top: 125px;
+    }
+    #activity h4 {
+        margin-left: 0;
+    }
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+       
+    .habitat_listing img {
+        width: 54em;
+        height: 174px;
+    }
+    #activity {
+        margin-top: 78em;
+    }
+}
+
+@media (max-width: 900px) {
+    h3 {
+        font-size: 22px;
+    }
+    .habitat_listing img {
+        width: 48em;
     }
     .listing_activities {
         flex-direction: column;
     }
     .listing_activities img {
-        width: 100%;
-        height: 250px;
+        width: 49em;
+        height: 19em;
+        border-radius: 53px 53px 0px 0px;
+        margin-top: 27px;
     }
     #activity h4 {
-        font-size: 21px;
-        margin-bottom: 63px;
+        width: max-content;
+        font-size: 22px;
     }
     footer {
-        margin: 0;
         flex-direction: column;
-        height: 32em;
-        font-size: 26px;
     }
-    footer h3 {
-        font-size: 30px;
+    .footer_accommodation {
+        margin-left: 40px;
     }
-    .footer_accommodation, .footer_assistance {
-        margin-left: 50px;
-    }
-}
-@media (max-width: 999px) {
-    .mapi {
-        font-size: 24px;
-        width: 60px;
-        height: 60px;
-    }
-    input {
-        width: 100%;
-        height: 60px;
-        font-size: 24px;
-    }
-    .search {
-        display: none;
-    }
-    .button {
-        border-radius: 16px 16px 16px 16px;
-        width: 60px;
-        height: 60px;
-        margin-right: -100px;
-        margin-left: 68px;
-    }
-    .part_search {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .glass {
-        display: block;
-        font-size: 24px;
-        color: white !important;
-    }
-    .habitat_listing {
-        flex-direction: column;
-}
-    .habitat_listing img {
-        width: 100%;
-}
-    #accomodation {
-        width: 52%;
-    }
-    .footer_about {
-        margin-top: 4%;
+    .footer_assistance {
+        margin-left: 40px;
     }
 }
 
-@media (max-width: 840px) {
-    main {
-        flex-direction: column-reverse;  
-    }
-    aside,#accomodation {
-        width: 98%;
-    }
-    #accomodation {
-        background-color: white;
-    }
-    .best img {
-        width: 35%;
-    }
-    .best_description {
-        font-size: 20px;
+@media (max-width: 805px) {
+    aside {
+        width: 103%;
     }
     .habitat_listing img {
-        height: 164px;
-    }
-    .position_text {
-        font-size: 23px;
-    }
-}
-
-@media (max-width: 580px) {
-    #info {
-        padding-top: 12%;
-}
-    main {
-        margin-top: 177px;
-    }
-
-    .header_nav {
-        justify-content: center;
-    }
-    footer {
-        font-size: 17px;
-        margin-top: 20%;
-    }
-    footer h3 {
-        font-size: 19px;
-    }
-    input {
-        width: 71%;
-    }
-    .button {
-    margin-right: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .header_nav {
-        margin-left: 9%;
-    }
-    .filtered_listing {
-        flex-direction: column;
-    }
-    .filtered {
-        width: 100%;
-        max-width: initial;
-        margin-bottom: 21px;
-    }
-    #info {
-        padding-top: 41%;
-    }
-    main {
-        margin-top: 318px;
-    }
-    aside, #accomodation {
-        width: 123%;
-    }
-    section#activity {
-        width: 127%;
-    }
-    footer {
-        margin-left: -20px;
-        width: 133%;
-    }
-}
-
-@media (max-width: 380px) {
-    .header_nav {
-        font-size: 24px;
-        margin-left: 20%;
-        margin-top: 36px;
-    }
-    #registration {
-        margin-right: -2px;
-    }
-    #info {
-        padding-top: 53%;
-    }
-    aside, #accomodation {
-        width: 149%;
+        width: 43em;
+        height: 16em;
     }
     #activity {
-        width: 159%;
+        margin-top: 110em;
+    }
+    .listing_activities img {
+        width: 45em;
+        height: 22em;
     }
     footer {
-        width: 165%;
+        padding-right: 400px;
+        margin-top: 57px;
     }
+}
+
+@media (max-width: 699px) {
+    .header_nav {
+        width: 112%;
+    }
+    .habitat_listing img {
+        width: 45em;
+    }
+    aside {
+        width: 220%;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        width: 115%;
+    }
+    #accomodation h2, #activity h2 {
+        font-size: 21px;
+    }
+    .habitat_listing {
+        margin-left: -22px;
+    }
+    .best_picture {
+        width: 84%;
+    }
+    .listing_activities img {
+        width: 44em;
+}
+
+@media (max-width: 350px) {
+    #registration {
+        margin-right: -230px;
+    }
+    .header_nav {
+        width: 170%;
+    }
+    .header_nav_link {
+        margin-left: -80px;
+    }
+    #part_one {
+        margin-top: 140px;
+    }
+}
+
+
+
 }
