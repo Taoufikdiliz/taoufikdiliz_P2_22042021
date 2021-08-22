@@ -33,7 +33,7 @@ p{
     height: 100px;
 }
 .header_nav_link:hover{
-    border-top: 3px solid #0065FC;
+    border-top: 2px solid #0065FC;
     color: #0065fc;
 }
 #logo{
@@ -421,6 +421,7 @@ footer li:hover{
     #registration{
         order: 1;
         margin: 22px;
+        margin-right: 25px;
         font-size: 25px;
     }
     .header{
@@ -434,12 +435,12 @@ footer li:hover{
         width: 100%;
         margin: 0px 30px;
         order: 2;
-        border-bottom: 3px solid #ddd0d0;
+        border-bottom: 1.5px solid #ddd0d0;
         font-size: 24px;
     }
     .header_nav_link:hover{
         border-top: none;
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
         color: #0065fc;
     }
     #form {
@@ -521,12 +522,11 @@ footer li:hover{
     }
 }
 
+/*  Ipad 768px - Surface Duo 540px */
+
 @media (max-width: 850px) {
     h2 {
         font-size: xx-large;
-    }
-    h3 {
-        font-size: 27px;
     }
     .search {
         display: none;
@@ -596,6 +596,8 @@ footer li:hover{
         margin-top: 55px;
     }
 
+/*  Iphone 6/7/8/ Plus & Pixel 2 & Pixel 2 XL 414px */
+
 @media (max-width: 440px) {
     h2 {
         font-size: x-large;
@@ -605,6 +607,12 @@ footer li:hover{
     }
     main {
         width: 130%;
+    }
+    aside {
+        padding-right: 3em;
+    }
+    .habitat {
+        width: 110%;
     }
     .habitat_listing img {
         height: 12em;
@@ -622,6 +630,8 @@ footer li:hover{
     }
 }
 
+/* Iphone X & Iphone 6/7/8 375px - Moto G4 & Galaxie S5 360px */
+
 @media (max-width: 375px) {
     h3 {
         font-size: 20px;
@@ -635,33 +645,48 @@ footer li:hover{
     aside {
         width: 115%;
     }
+    .best_picture {
+        width: 104%;
+    }
     #accomodation {
         width: 105%;
     }
     .habitat {
-        width: 105%;
+        width: 111%;
     }
     .listing_activities img {
-        width: 142%;
+        width: 154%;
     }
+    footer {
+        padding-right: 11em;
+    }
+
+/* Galaxie Fold 280px */
 
 @media (max-width: 280px) {
     h2 {
-        font-size: 22px;
+        width: max-content;
+        font-size: large;
+        margin-bottom: 50px;
+    }
+    #registration {
+        margin-right: -70px;
     }
     aside {
         width: max-content;
-    }
-    .best_picture {
-        width: 
     }
     .habitat_picture {
         width: 130%;
     }
     .listing_activities img {
-        width: 33em;
+        width: 35em;
     }
     footer {
-        padding-right: 9em;
+        padding-right: 22em;
+        font-size: 16px;
+    }
+    footer h3 {
+        font-size: 21px;
+        min-width: max-content;
     }
 }
