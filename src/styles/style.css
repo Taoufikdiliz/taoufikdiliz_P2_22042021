@@ -38,7 +38,7 @@ p{
 }
 #logo{
     position: absolute;
-    height: 94px;
+    height: 74px;
     padding: 41px 30px;
     grid-area: img;
 }
@@ -205,7 +205,7 @@ input:focus{
 
 /* Main */
 
-main {
+.accomodation_aside {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -449,7 +449,7 @@ footer li:hover{
     #filters {
         display: contents;
     }
-    main {
+    .accomodation_aside {
         height: 70em;
         justify-content: space-between;
     }
@@ -558,7 +558,7 @@ footer li:hover{
     #form {
         margin: 50px 0px 70px;
     }
-    main {
+    .accomodation_aside {
         flex-direction: column-reverse;
         width: 110%;
         margin: 97em 0;
@@ -605,7 +605,7 @@ footer li:hover{
     .filtered {
         margin: 4px;
     }
-    main {
+    .accomodation_aside {
         width: 130%;
     }
     aside {
