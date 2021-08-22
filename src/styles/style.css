@@ -256,6 +256,7 @@ input:focus{
     padding: 2px 2px 10px 2px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px #b4b3b3;
+    cursor: pointer;
 }
 .habitat_picture:hover {
     transition: transform 100ms;
@@ -286,6 +287,7 @@ aside h2 {
     border: 1px solid white;
     background-color: white;
     border-radius: 16px;
+    cursor: pointer;
 }
 .best_picture:hover{
     transition: transform 100ms;
@@ -349,7 +351,8 @@ aside h2 {
 }
 .column_one_100, .column_60_40, .column_three_100, .column_two_40_60 {
     width: 23%;
-    margin-right: -45px ;
+    margin-right: -45px;
+    cursor: pointer;
 }
 .column_one_100 img, .column_60_40 img, .column_three_100 img, .column_two_40_60 img {
     border-radius: 16px 16px 0px 0px;
@@ -400,6 +403,9 @@ footer {
 footer ul {
     list-style-type: none;
     margin-left: -40px;
+}
+footer li {
+    cursor: pointer;
 }
 .footer_accommodation {
     margin-left: 240px;
