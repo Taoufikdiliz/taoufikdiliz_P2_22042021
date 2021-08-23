@@ -268,6 +268,11 @@ aside{
     width: 33%;
     height: 52em;
 }
+i.fa.fa-chart-line {
+    color: black;
+    font-size: 27px;
+    margin-right: 23px;
+}
 aside h2{
     margin-left: 25px;
 }
@@ -462,6 +467,10 @@ footer li:hover{
     .habitat_listing img{
         width: 282px;
     }
+    i.fa.fa-chart-line {
+        font-size: 21px;
+        margin-right: 17px;
+    }
     #activity h4{
         margin-left: 0px;
     }
@@ -563,6 +572,11 @@ footer li:hover{
     aside{
         width: 100%;
     }
+    i.fa.fa-chart-line {
+        font-size: 26px;
+        margin-right: 39px;
+        margin-top: 8px;
+    }
     #accomodation{
         margin-top: 40px;
         width: 93%;
@@ -615,6 +629,9 @@ footer li:hover{
     .habitat_listing img{
         height: 12em;
     }
+    i.fa.fa-chart-line {
+        margin-right: 25px;
+    }
     #activity{
         margin-top: -69em;
     }
@@ -642,6 +659,9 @@ footer li:hover{
     }
     aside{
         width: 115%;
+    }
+    i.fa.fa-chart-line {
+        margin-right: -20px;
     }
     .best_picture{
         width: 104%;
