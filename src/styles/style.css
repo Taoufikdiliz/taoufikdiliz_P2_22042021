@@ -21,7 +21,7 @@ h3{
     font-size: 21px;
 }
 h4{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 800; 
 }
 p{
@@ -31,20 +31,17 @@ p{
     display: grid;
     width: 100%;
     height: 100px;
-}
-.header_nav_link:hover{
-    border-top: 2px solid #0065FC;
-    color: #0065fc;
+    margin-top: 10px;
 }
 #logo{
     position: absolute;
     height: 74px;
-    padding: 41px 30px;
+    margin: 30px 0 0 40px;
     grid-area: img;
 }
 .header_nav{
     display: flex;
-    margin-right: 185px;
+    margin-right: 100px;
     margin-left: auto;
     font-size: 19px;
     place-content: space-evenly;
@@ -57,11 +54,14 @@ p{
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
 }
+.header_nav_link:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065fc;
+}
 #registration{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 6.7%;
     color: #0065FC;
     font-size: 19px;
     font-weight: 700;
@@ -72,7 +72,7 @@ p{
 /* Bouton recherche */
 #part_one{
     width: 100%;
-    padding: 30px;
+    margin: 90px 0px 10px 40px;
 }
 #form{
     display: flex;
@@ -116,7 +116,7 @@ input:focus{
     align-items: center;
     justify-content: center;
     width: 133px;
-    height: 45px;
+    height: 63px;
     background-color: #0065fc;
     border-radius: 0px 16px 16px 0px;
     color: white;
@@ -203,13 +203,16 @@ input:focus{
 }
 
 /* Main */
+main{
+    margin: 0 -10px 0 40px;
+}
 .accomodation_aside{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 95%;
+    width: 100%;
     height: 58em;
-    margin-left: 35px;
+
 }
 
 /* Partie hébergement et populaire */
@@ -217,15 +220,13 @@ input:focus{
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 16px;
-    width: 61%;
+    width: 62%;
     height: 52em;
-    padding-left: 15px;
-    padding-right: 30px;
 }
 
 /* Partie hébergement */
 #accomodation h2, aside h2{
-    margin: 45px 0px 45px 10px;
+    margin: 45px 0px 45px 25px;
 }
 #accomodation h3{
         margin-top: 30px;
@@ -236,7 +237,7 @@ input:focus{
 }
 .habitat_listing{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .habitat_listing img{
@@ -265,7 +266,7 @@ aside{
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 15px;
-    width: 33%;
+    width: 34%;
     height: 52em;
 }
 i.fa.fa-chart-line {
@@ -281,8 +282,8 @@ aside h2{
 }
 .best_picture{
     display: flex;
-    width: 95%;
-    margin-bottom: 20px;
+    width: 94%;
+    margin-bottom: 43px;
     box-shadow: 0 0 10px white;
     border: 1px solid white;
     background-color: white;
@@ -326,11 +327,7 @@ aside h2{
 
 /*  Activites  */
 #activity{
-    margin-left: 35px;
-    width: 91%;
-}
-#activity h4{
-    margin-left: 25px;
+    width: 96.5%;
 }
 .listing_activities{
     display: flex;
@@ -387,6 +384,7 @@ aside h2{
 /*  Footer  */
 footer{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding-right: 50px;
     padding-bottom: 60px;
@@ -395,7 +393,7 @@ footer{
     line-height: 35px;
 }
 .footer_about{
-    margin-left: 45px;
+    margin-left: 40px;
 }
 footer ul{
     list-style-type: none;
@@ -404,31 +402,25 @@ footer ul{
 footer li{
     cursor: pointer;
 }
-.footer_accommodation{
-    margin-left: 240px;
-    margin-right: 240px;
-}
 footer li:hover{
     text-decoration: underline;
 }
 
         /* MEDIA QUIERIES */
 
-/* ipad Pro 1024px */
-@media (max-width: 1240px){
+/*  ipad Pro 1024px  */
+@media (max-width: 1125px){
     #logo{
         height: 64px;
-        padding: 0px 30px;
+        margin: 0 0 0 40px;
     }
     #registration{
         order: 1;
-        margin: 22px;
-        margin-right: 25px;
+        margin: 20px 10px 0 0;
         font-size: 25px;
     }
     .header{
         grid-template-areas: "img . note" "nav nav nav";
-        justify-content: space-between;
         height: auto;
         margin-top: 40px;
     }
@@ -445,94 +437,54 @@ footer li:hover{
         border-bottom: 2px solid #0065FC;
         color: #0065fc;
     }
-    #form{
-        margin-bottom: 38px;
-    }
     #filters{
-        display: contents;
+        display: block;
+    }
+    .filtered_listing{
+        margin-top: -20px;
     }
     .accomodation_aside{
-        height: 70em;
-        justify-content: space-between;
+        height: 72em;
     }
     #accomodation, aside{
         height: 65em;
     }
-    #accomodation h2{
-        padding-left: 30px;
-    }
-    .habitat_listing{
-        justify-content: space-around;
-    }
-    .habitat_listing img{
-        width: 282px;
-    }
-    i.fa.fa-chart-line {
-        font-size: 21px;
-        margin-right: 17px;
-    }
-    #activity h4{
-        margin-left: 0px;
-    }
-    .listing_activities{
-        justify-content: space-between;   
-    }
-    .footer_accommodation{
-        margin-left: 110px;
-        margin-right: 125px;
-    }
-}
 
-@media (max-width: 1000px){
-    .habitat_listing img{
-        width: 215px;
+@media (max-width: 970px){
+    h2{
+        font-size: 18px;
     }
-    #accomodation{
-        width: 55%;
+    .best {
+        margin-left: 15px;
     }
-}
-
-@media (max-width: 890px){
-    #accomodation, aside{
-        height: 116em;
+    .best_picture {
+        height: 158px;
     }
-    #accomodation{
-        width: 50%;
+    .best img {
+        width: 52%;
+        height: 161px;
     }
-    aside{
-        width: 41%;
+    .best_description .star {
+        margin-top: 11px;
+        font-size: 0;
     }
-    .habitat_listing{
-        flex-direction: column;
-    }
-    .habitat_listing img{
-        width: 100%;
-    }
-    .best img{
-        width: 45%;
-    }
-    #activity{
-        margin-left: 35px;
-        width: 91%;
-        margin-top: 52em;
-    }
-    .col_55 img{
-        height: 170px;
+    #activity {
+        margin-top: 23px;
     }
     footer{
         flex-direction: column;
+    }
+    .footer_accommodation, .footer_assistance {
+        padding-left: 40px;
+    }
+
+/*  Ipad 768px  */
+@media (max-width: 780px){
+    h2 {
         font-size: 22px;
     }
-    .footer_assistance,.footer_accommodation{
-        margin-left: 40px;
-    }
-}
-
-/*  Ipad 768px - Surface Duo 540px */
-
-@media (max-width: 850px){
-    h2 {
-        font-size: xx-large;
+    .col_55 img {
+        height: 177px;
     }
     .search{
         display: none;
@@ -542,22 +494,23 @@ footer li:hover{
         justify-content: center;
         align-items: center;
         width: 70px;
-        height: 70px;
+        height: 60px;
         border-radius: 16px 16px 16px 16px;
         background-color: #0065FC;
     }
     input{
         width: 345px;
-        height: 70px;
+        height: 62px;
         font-weight: 800;
         font-size: 21px;
     }
     .mapi{
         width: 70px;
-        height: 70px;
+        height: 60px;
         color: black;
     }
     #form ::before{
+        margin-left: -7px;
         color: inherit;
         font-size: 25px ;
     }
@@ -566,56 +519,80 @@ footer li:hover{
     }
     .accomodation_aside{
         flex-direction: column-reverse;
-        width: 110%;
-        margin: 97em 0;
+        margin-top: 56em;
+    }
+    main{
+        width: 269%;
+        margin-top: -16em;
+    }
+    .best_description .star{
+        margin-top: 49px;
     }
     aside{
-        width: 100%;
+        width: 38%;
+        margin-left: -40px;
+        border-radius: 0;
     }
-    i.fa.fa-chart-line {
-        font-size: 26px;
-        margin-right: 39px;
-        margin-top: 8px;
+    .fa-chart-line:before{
+        margin-right: 22px;
     }
     #accomodation{
-        margin-top: 40px;
-        width: 93%;
-        background-color: white;
-    }
-    #accomodation h2{
-        padding-left: 0px;
+        width: 38%;
+        margin-left: -40px;
+        background: white;
     }
     .habitat_listing img{
-        height: 16em;
-    }
-    #activity h4{
-        font-size: 24px;
-    }
-    #activity{
-        margin-top: -43em;
+        width: 355px;
     }
     .listing_activities{
         flex-direction: column;
+        width: 204em;
     }
-    .listing_activities img{
-        height: 19em;
+    .column_one_100 img, .column_60_40 img, .column_three_100 img, .column_two_40_60 img{
+        border-radius: 50px 50px 0px 0px;
+        width: 100%;
+        height: 205px;
     }
-    .column_one_100, .column_60_40, .column_three_100, .column_two_40_60{
-        width: 110%;
+    h4{
+        margin-left: 32px;
+        font-size: 17px;
     }
-    footer{
-        margin-top: 55px;
+    #activity{
+        margin-top: 58px;
+        margin-left: -20px;
     }
-}
+    .footer{
+        flex-direction: column;
+        width: auto;
+        margin-top: 68px;
+    }
 
-/*  Iphone 6/7/8/ Plus & Pixel 2 & Pixel 2 XL 414px */
+
+
+
+/*  Iphone 6/7/8/ Plus & Pixel 2 & Pixel 2 XL 414px 
 
 @media (max-width: 440px){
     h2 {
         font-size: x-large;
     }
+    #registration{
+        margin-right: -35px;
+    }
+    .header_nav{
+        margin: 0px 30px 0px 60px;
+    }
     .filtered{
         margin: 4px;
+    }
+    #accomodation{
+        border: none;
+    }
+    #accomodation h2{
+        padding-left: 25px;
+    }
+    #accomodation h3{
+        margin-left: 40px;
     }
     .accomodation_aside{
         width: 130%;
@@ -623,29 +600,48 @@ footer li:hover{
     aside{
         padding-right: 3em;
     }
+    aside h2{
+        margin-left: 50px;
+    }
     .habitat{
         width: 110%;
+        margin-bottom: 39px;
+    }
+    .habitat_picture{
+        margin: 0 40px 0 40px;
     }
     .habitat_listing img{
         height: 12em;
+        margin-left: -5px;
+        width: 102%;
     }
     i.fa.fa-chart-line {
         margin-right: 25px;
     }
     #activity{
-        margin-top: -69em;
+        margin-top: -63em;
+    }
+    #activity h2 {
+        margin-left: 10px;
+    }
+    #activity h4{
+        font-size: 18px;
+        margin-left: 11px;
+    }
+    .best {
+        margin-left: 50px;
     }
     .listing_activities img{
-        width: 125%;
+        width: 120%;
         height: 14em;
-        margin-left: -20px;
+        margin-left: 10px;
     }
     footer{
         padding-right: 40%;
     }
 }
 
-/* Iphone X & Iphone 6/7/8 375px - Moto G4 & Galaxie S5 360px */
+/* Iphone X & Iphone 6/7/8 375px - Moto G4 & Galaxie S5 360px 
 
 @media (max-width: 375px){
     h3{
@@ -680,7 +676,7 @@ footer li:hover{
     }
 }
 
-/* Galaxie Fold 280px */
+/* Galaxie Fold 280px 
 
 @media (max-width: 280px){
     h2{
