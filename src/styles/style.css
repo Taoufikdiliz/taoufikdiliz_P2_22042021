@@ -695,6 +695,9 @@ footer li:hover{
 }
 
 @media (max-widt: 280px){
+    body{
+        width: 132%;
+    }
     .research {
         width: 190%;
     }
