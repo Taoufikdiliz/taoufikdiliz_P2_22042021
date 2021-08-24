@@ -519,17 +519,20 @@ footer li:hover{
     }
     .accomodation_aside{
         flex-direction: column-reverse;
-        margin-top: 56em;
+        margin-top: 40em;
     }
     main{
-        width: 269%;
+        width: 100%;
         margin-top: -16em;
+    }
+    .best_picture{
+        margin-left: 20px;;
     }
     .best_description .star{
         margin-top: 49px;
     }
-    aside{
-        width: 38%;
+    aside, #accomodation {
+        width: 110%;
         margin-left: -40px;
         border-radius: 0;
     }
@@ -537,10 +540,26 @@ footer li:hover{
         margin-right: 22px;
     }
     #accomodation{
-        width: 38%;
-        margin-left: -40px;
         background: white;
     }
+    #accomodation h3{
+        margin-left: 40px;
+    }
+    .column_40 img {
+        height: 145px;
+    }
+    .listing_activities{
+        margin: 35px 0 0 -10px;
+    }
+    #activity{
+        width: 97%;
+    }
+        
+    /*  Surface Duo 540px  */   
+    @media (max-width: 630px) {
+
+    }
+        /*
     .habitat_listing img{
         width: 355px;
     }
