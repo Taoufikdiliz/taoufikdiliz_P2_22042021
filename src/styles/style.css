@@ -212,7 +212,6 @@ main{
     align-items: baseline;
     width: 100%;
     height: 58em;
-
 }
 
 /* Partie hébergement et populaire */
@@ -406,7 +405,7 @@ footer li:hover{
     text-decoration: underline;
 }
 
-        /* MEDIA QUIERIES */
+        /* MEDIA QUERIES */
 
 /*  ipad Pro 1024px  */
 @media (max-width: 1125px){
@@ -449,6 +448,7 @@ footer li:hover{
     #accomodation, aside{
         height: 65em;
     }
+}
 
 @media (max-width: 970px){
     h2{
@@ -477,6 +477,7 @@ footer li:hover{
     .footer_accommodation, .footer_assistance {
         padding-left: 40px;
     }
+}
 
 /*  Ipad 768px  */
 @media (max-width: 780px){
@@ -531,21 +532,23 @@ footer li:hover{
     .best_description .star{
         margin-top: 49px;
     }
-    aside, #accomodation {
+    aside, #accomodation{
         width: 110%;
         margin-left: -40px;
         border-radius: 0;
+        padding-right: 15px;
     }
     .fa-chart-line:before{
         margin-right: 22px;
     }
     #accomodation{
         background: white;
+        border: none;
     }
     #accomodation h3{
         margin-left: 40px;
     }
-    .column_40 img {
+    .column_40 img{
         height: 145px;
     }
     .listing_activities{
@@ -554,173 +557,141 @@ footer li:hover{
     #activity{
         width: 97%;
     }
-        
-    /*  Surface Duo 540px  */   
-    @media (max-width: 630px) {
-
-    }
-        /*
-    .habitat_listing img{
-        width: 355px;
-    }
-    .listing_activities{
-        flex-direction: column;
-        width: 204em;
-    }
-    .column_one_100 img, .column_60_40 img, .column_three_100 img, .column_two_40_60 img{
-        border-radius: 50px 50px 0px 0px;
-        width: 100%;
-        height: 205px;
-    }
-    h4{
-        margin-left: 32px;
-        font-size: 17px;
-    }
-    #activity{
-        margin-top: 58px;
-        margin-left: -20px;
-    }
-    .footer{
-        flex-direction: column;
-        width: auto;
-        margin-top: 68px;
-    }
-
-
-
-
-/*  Iphone 6/7/8/ Plus & Pixel 2 & Pixel 2 XL 414px 
-
-@media (max-width: 440px){
-    h2 {
-        font-size: x-large;
-    }
-    #registration{
-        margin-right: -35px;
-    }
-    .header_nav{
-        margin: 0px 30px 0px 60px;
-    }
-    .filtered{
-        margin: 4px;
-    }
-    #accomodation{
+    .listing_activities img {
         border: none;
     }
-    #accomodation h2{
-        padding-left: 25px;
-    }
-    #accomodation h3{
-        margin-left: 40px;
-    }
-    .accomodation_aside{
-        width: 130%;
-    }
-    aside{
-        padding-right: 3em;
-    }
-    aside h2{
-        margin-left: 50px;
-    }
-    .habitat{
-        width: 110%;
-        margin-bottom: 39px;
-    }
-    .habitat_picture{
-        margin: 0 40px 0 40px;
-    }
-    .habitat_listing img{
-        height: 12em;
-        margin-left: -5px;
-        width: 102%;
-    }
-    i.fa.fa-chart-line {
-        margin-right: 25px;
-    }
-    #activity{
-        margin-top: -63em;
-    }
-    #activity h2 {
-        margin-left: 10px;
-    }
-    #activity h4{
-        font-size: 18px;
-        margin-left: 11px;
-    }
-    .best {
-        margin-left: 50px;
-    }
-    .listing_activities img{
-        width: 120%;
-        height: 14em;
-        margin-left: 10px;
+    .column_one_100, .column_60_40, .column_three_100, .column_two_40_60 {
+        width: 23%;
+        margin-right: -45px;
+        cursor: pointer;
+        border: none;
     }
     footer{
-        padding-right: 40%;
+        padding-right: 80px;
+    }
+}     
+    /*  Surface Duo 540px  */  
+    @media (max-width: 630px){
+        main{
+            margin-top: 48em;
+        }
+        #accomodation{
+            margin-top: 3em;
+            border: none;
+        }
+        .listing_activities, .habitat_listing{
+            flex-direction: column;
+        }
+        .listing_activities img{
+            width: 100%;
+            height: 12em;
+        }
+        .habitat_picture {
+            width: 92%;
+            margin-left: 25px;
+        }
+        .habitat_listing img{
+            width: 100%;
+        }
+        #activity{
+            width: 23%;
+            margin-top: 54em;
+        }
+        #activity h2{
+            min-width: max-content;
+        } 
+        .img_100, .column_60, .column_40, .column {
+            width: 37em;
+        }
+        #activity h4{
+            font-size: 18px;
+            min-width: max-content;
+        }
+        footer{
+            margin-top: 5em;
+        }
+    }
+@media (max-width: 414px ){
+    body {
+        margin-left: -15px;
+    }
+    input {
+        width: 250px;
+        margin-left: 0;
+    }
+    .filtered.familia {
+        position: relative;
+        border: none;
+    }
+    .filtered.familia p {
+        width: 100px;
+        height: 42px;
+        padding: 13px 13px 0px 75px;
+        position: absolute;
+        left: -24px;
+        border-top: 3px solid #F2F2F2;
+        border-right: 3px solid #F2F2F2;
+        border-bottom: 3px solid #F2F2F2;
+        border-radius: 44px;
+    }
+    aside, #accomodation {
+        width: 140%;
+        border-radius: 0;
+        padding-right: 15%;
+    }
+    aside h2 {
+        margin-left: 35px;
+    }
+    .fa-chart-line:before {
+        margin-right: -27px;
+    }
+    .best_picture {
+        width: 100%;
+    }
+    section#accomodation {
+        width: 116%;
+        margin-left: -30px;
+        border: none;
+    }
+    .listing_activities img {
+        width: 100%;
+    }
+    .habitat_picture{
+        width: 116%;
+    }
+    .footer{
+        padding-right: 56%;
+    }
+}
+@media (max-width: 375px) {
+    aside, #accomodation {
+        width: 150%;
+    }
+    #registration {
+        margin: 20px -50px 0 0;
+    }
+    .header_nav {
+        margin: 15px 53px;
+    }
+    .habitat_picture {
+        width: 128%;
+    }
+    #activity img {
+        width: 97%;
+    }
+    footer {
+        width: 145%;
     }
 }
 
-/* Iphone X & Iphone 6/7/8 375px - Moto G4 & Galaxie S5 360px 
-
-@media (max-width: 375px){
-    h3{
-        font-size: 20px;
+@media (max-widt: 280px){
+    .research {
+        width: 190%;
     }
-    #form{
-        width: min-content;
+    aside, #accomodation {
+        width: 206%;
     }
-    #info{
-        margin-top: 23px;
-    }
-    aside{
-        width: 115%;
-    }
-    i.fa.fa-chart-line {
-        margin-right: -20px;
-    }
-    .best_picture{
-        width: 104%;
-    }
-    #accomodation{
-        width: 105%;
-    }
-    .habitat{
-        width: 111%;
-    }
-    .listing_activities img{
-        width: 154%;
-    }
-    footer{
-        padding-right: 11em;
-    }
-}
-
-/* Galaxie Fold 280px 
-
-@media (max-width: 280px){
-    h2{
-        width: max-content;
-        font-size: large;
-        margin-bottom: 50px;
-    }
-    #registration{
-        margin-right: -70px;
-    }
-    aside{
-        width: max-content;
-    }
-    .habitat_picture{
-        width: 130%;
-    }
-    .listing_activities img{
-        width: 35em;
-    }
-    footer{
-        padding-right: 22em;
-        font-size: 16px;
-    }
-    footer h3{
-        font-size: 21px;
-        min-width: max-content;
+    section#accomodation {
+        width: 156%;
     }
 }
