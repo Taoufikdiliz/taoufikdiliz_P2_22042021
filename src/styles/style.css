@@ -615,6 +615,9 @@ footer li:hover{
     body {
         margin-left: -15px;
     }
+    .header_nav{
+        margin: 0px 62px;
+    }
     input {
         width: 250px;
         margin-left: 0;
@@ -659,28 +662,35 @@ footer li:hover{
     .habitat_picture{
         width: 116%;
     }
-    .footer{
-        padding-right: 56%;
+    footer{
+        padding-right: 12em;
     }
 }
 @media (max-width: 375px) {
     aside, #accomodation {
-        width: 150%;
+        width: 191%;
+    }
+    #part_one h2 {
+        font-size: 22px;
+        width: 24em;
     }
     #registration {
         margin: 20px -50px 0 0;
     }
     .header_nav {
-        margin: 15px 53px;
+        margin: 15px 90px;
+    }
+    .img_100, .column_60, .column_40, .column {
+        width: 45em;
     }
     .habitat_picture {
-        width: 128%;
+        width: 164%;
     }
     #activity img {
         width: 97%;
     }
     footer {
-        width: 145%;
+        width: 161%;
     }
 }
 
