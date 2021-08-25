@@ -1,6 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
-    width: 100%;
+    width: 93%;
     margin: 0;
     color: black;
 }
@@ -385,7 +385,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-right: 50px;
+    padding-right: 95px;
     padding-bottom: 60px;
     background-color: #f2f2f2;
     font-size: 19px;
@@ -611,7 +611,7 @@ footer li:hover{
             margin-top: 5em;
         }
     }
-@media (max-width: 414px ){
+@media (max-width: 414px){
     body {
         margin-left: -15px;
     }
@@ -638,7 +638,7 @@ footer li:hover{
         border-radius: 44px;
     }
     aside, #accomodation {
-        width: 140%;
+        width: 146%;
         border-radius: 0;
         padding-right: 15%;
     }
@@ -656,8 +656,11 @@ footer li:hover{
         margin-left: -30px;
         border: none;
     }
+    .listing_activities, .habitat_listing {
+        width: 108%;
+    }
     .listing_activities img {
-        width: 100%;
+        width: 97%;
     }
     .habitat_picture{
         width: 116%;
@@ -667,8 +670,11 @@ footer li:hover{
     }
 }
 @media (max-width: 375px) {
-    aside, #accomodation {
-        width: 191%;
+    aside, #accomodation{
+        width: 43em;
+    }
+    #accomodation {
+        width: 40em;
     }
     #part_one h2 {
         font-size: 22px;
@@ -684,13 +690,13 @@ footer li:hover{
         width: 45em;
     }
     .habitat_picture {
-        width: 164%;
+        width: 100%;
     }
     #activity img {
         width: 97%;
     }
     footer {
-        width: 161%;
+        padding-right: 21em;
     }
 }
 
@@ -698,13 +704,22 @@ footer li:hover{
     body{
         width: 132%;
     }
+    #accomodation h2 {
+        width: max-content;
+    }
     .research {
         width: 190%;
     }
-    aside, #accomodation {
-        width: 206%;
+    .habitat {
+        width: 43em;
     }
-    section#accomodation {
+    aside, #accomodation {
+        width: 44em;
+    }
+    #accomodation {
         width: 156%;
+    }
+    .footer{
+        padding-right: 27em;
     }
 }
