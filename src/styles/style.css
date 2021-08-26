@@ -407,6 +407,65 @@ footer li:hover{
 
         /* MEDIA QUERIES */
 
+@media only screen and (min-width: 1600px) {
+    p{
+        font-size: 22px;
+    }
+    nav.header_nav {
+        margin-right: 135px;
+    }
+    nav.header_nav, #registration {
+        font-size: 30px;
+    }
+    .habitat {
+        width: 29%;
+    }
+    .habitat_listing img {
+        width: 100%;
+        height: 215px;
+    }
+    i.fa.fa-chart-line {
+        margin-right: 50px;
+    }
+    .best img {
+        width: 47%;
+        height: 240px;
+    }
+    aside h4 {
+        font-size: 17px;
+    }
+    #accomodation h2, aside h2 {
+        margin: 45px 0px 45px 35px;
+    }
+    .accomodation_aside {
+        height: 75em;
+    }
+    #accomodation, aside {
+        height: 63em;
+    }
+    #accomodation h3 {
+        margin-top: 40px;
+        margin-left: 30px;
+        font-size: 27px;
+    }
+    footer{
+        margin-top: 65px;
+    }
+    h2, footer{
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 21px;
+        margin-left: 30px;
+    }
+    .img_100 img {
+        height: 422px;
+    }
+    footer h3{
+        font-size: 25px;
+    }
+}
+
 /*  ipad Pro 1024px  */
 @media (max-width: 1125px){
     #logo{
