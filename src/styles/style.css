@@ -748,6 +748,9 @@ footer li:hover{
     .img_100, .column_60, .column_40, .column {
         width: 45em;
     }
+    .habitat{
+        width: 43em;
+    }
     .habitat_picture {
         width: 100%;
     }
