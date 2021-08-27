@@ -407,7 +407,7 @@ footer li:hover{
 
         /* MEDIA QUERIES */
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1240px) {
     p{
         font-size: 22px;
     }
@@ -463,6 +463,15 @@ footer li:hover{
     }
     footer h3{
         font-size: 25px;
+    }
+}
+
+@media (max-width: 1220px){
+    #accomodation, aside {
+        height: 64em;
+    }
+    .accomodation_aside {
+        height: 69em;
     }
 }
 
@@ -762,7 +771,7 @@ footer li:hover{
     }
 }
 
-@media (max-widt: 280px){
+@media (max-width: 280px){
     body{
         width: 132%;
     }
