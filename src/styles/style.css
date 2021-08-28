@@ -526,28 +526,76 @@ i.fa.fa-chart-line {
 
 /* Size Ipad Pro 1024px */
  @media (max-width: 1024px){
-    aside, #accomodation {
-        padding: 0px 113px 0 0;
+    .header{
+        padding-right: 5%;
+        margin: 5% 0% 0% 5%;
+    }
+    #part_one{
+        margin: 60px 0px 0 5%;
+    }
+    #filters{
+        margin-top: 60px;
+    }
+    aside{
+        margin: 0;
+        margin-left: -10px;
+        padding-left: 20px;
+    }
+    .best_picture{
+        width: auto;
+    }
+    .habitat_picture{
+        width: 100%;
+        margin-left: 4%;
+    }
+    #accomodation h2{
+        margin: 45px 0px 45px 60px;
+    }
+    .additional {
+        margin: 30px 0px 0px 65px;
+    }
+    section#activity {
+        margin-left: 30px;
+        width: 97%;
+    }
+    #activity img {
+        height: 22em;
     }
 }
 
 /* Ipad 768px */
 @media (max-width: 768px){
+    h2 {
+        font-size: 32px;
+    }
+    #registration {
+        margin: 30px -15% 0px 0px;
+    }
     main {
         margin-top: 14em;
     }
     aside {
-        padding-right: 11em;
+        width: max-content;
     }
-    .best_picture {
-        width: 54em;
+    #accomodation {
+        margin-top: 45px;
     }
     .habitat_picture {
-        width: 115%;
+        width: 50em;
+    }
+    .habitat_listing img {
+        height: 17em;
+    }
+    .position_text {
+        margin: 25px 0px 20px 40px;
+    }
+    .additional {
+        font-size: 25px;
     }
     .listing_activities {
-        width: 115%;
+        width: 50em;
     }
+}
     
 /* Surface Duo 540px */
 @media (max-width: 540px){
