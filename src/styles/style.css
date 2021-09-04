@@ -375,26 +375,26 @@ i.fa.fa-chart-line {
 }
 
 /* Pied de page */  
-    footer{
-        display: flex;
-        justify-content: space-between;
-        width: 77%;
-        padding: 1.7% 23% 10em 60px;
-        background-color: #f2f2f2;
-    }
-    footer ul{
-        display: contents;
-    }
-    footer li{
-        list-style-type: none;
-        font-size: 25px;
-        line-height: 40px;
-    }
-    footer li:hover{
-        text-decoration: underline;
-    }
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    padding: 1.7% 23% 10em 60px;
+    background-color: #f2f2f2;
+}
+footer ul{
+    display: contents;
+}
+footer li{
+    list-style-type: none;
+    font-size: 25px;
+    line-height: 40px;
+}
+footer li:hover{
+    text-decoration: underline;
+}
 
-        /* MEDIA QUERIES */
+    /* MEDIA QUERIES */
 
 @media (max-width: 2470px){
     .accomodation_aside{
@@ -406,7 +406,7 @@ i.fa.fa-chart-line {
     #logo {
         margin: 0 0 0 1.7%
     }
-    .accomodation_aside {
+    .accomodation_aside{
         flex-direction: column-reverse;
         height: auto;
     }
@@ -456,7 +456,7 @@ i.fa.fa-chart-line {
         height: 60px;
         color: black;
     }
-    aside, #accomodation {
+    aside, #accomodation{
         width: 100%;
         padding: 0px 100px 0 0;
         margin: 0 0 0 -25px;
@@ -465,38 +465,38 @@ i.fa.fa-chart-line {
     .best, .best_picture{
         width: 102%;
     }
-    #form ::before {
+    #form ::before{
         color: white;
     }
     #accomodation{
         height: auto;
         background-color: white;
     }
-    #accomodation h2, aside h2 {
+    #accomodation h2, aside h2{
         margin: 45px 0px 45px 25px;
     }
-    .habitat_listing {
+    .habitat_listing{
         flex-direction: column;
         width: 101%;
     }
-    .habitat_listing img {
+    .habitat_listing img{
         width: 100%;
         height: 25em;
     }
-    .habitat_picture {
+    .habitat_picture{
         width: 104%;
     }
-    .listing_activities {
+    .listing_activities{
         flex-direction: column;
     }
-    .additional {
+    .additional{
         margin: 25px 0px 0px 30px;
     }
-    #activity {
+    #activity{
         height: auto;
         margin-top: 7em;
     }
-    #activity img {
+    #activity img{
         width: 100%;
         height: 29em;
     }
@@ -504,21 +504,19 @@ i.fa.fa-chart-line {
         width: 100%;
         margin-bottom: 100px;
     }
-    .img_60 {
+    .img_60{
         margin-bottom: 70px;
     }
-    footer {
+    footer{
         flex-direction: column;
     }
+}
    
 @media (max-width: 1100px){
     #filters{
         display: block;
     }
-    main {
-        margin-top: 6em;
-    }
-    main {
+    main{
         margin-top: 6em;
     }
     .listing_activities {
@@ -538,7 +536,6 @@ i.fa.fa-chart-line {
     #form{
     padding: 1.7% 27% 3em 60px;
     }
-   
     main{
         margin-top: 18em;
     }
@@ -612,41 +609,41 @@ i.fa.fa-chart-line {
     #form{
         padding: 3.7% 0% 3em 2px;
     }
-    main {
+    main{
         margin-top: 24em;
     }
-    aside {
+    aside{
         width: inherit;
     }
-    .habitat_picture {
+    .habitat_picture{
         width: 34em;
     }
-    .listing_activities {
+    .listing_activities{
         width: 100%;
     }
-    .card_longchamp {
+    .card_longchamp{
         padding-top: 90px;
     }
-    #activity img {
+    #activity img{
         height: 15em;
     }
-    .card_frioul {
+    .card_frioul{
         padding-top: 20px;
     }
-    footer {
+    footer{
         padding: 55px 170px 60px 55px;
     }
 }
  
     /* Iphone 6/7/8 Plus 414px */
 @media (max-width: 414px){
-    h2 {
+    h2{
         font-size: 30px;
     }
-    .filtered_listing {
+    .filtered_listing{
         margin-left: -30px;
     }
-    .familia {
+    .familia{
         display: block;
         height: 53px;
         border-top: 3px solid #F2F2F2;
@@ -658,40 +655,40 @@ i.fa.fa-chart-line {
         margin-left: 6px;
         padding-right: 44px;
         }
-    .familia .filter_subtitle {
+    .familia .filter_subtitle{
         position: relative;
         left: 47px;
         top: -37px;
     }
-    #info .subtitle {
+    #info .subtitle{
         font: caption;
     }
     main{
         width: 23em;
         margin-top: 23em;
     }
-    .accomodation_aside {
+    .accomodation_aside{
         width: 28.5em;
     }
-    .best img {
+    .best img{
         width: 12em;
     }
-    .best_picture {
+    .best_picture{
         width: 30em;
         height: 17em;
     }
-    .best_description .star {
+    .best_description .star{
         margin-top: 7em;
     }
-    .habitat_picture {
+    .habitat_picture{
         width: 30em;
         height: 21em;
         margin-left: 35px;
     }
-    .habitat_listing img {
+    .habitat_listing img{
         height: 13em;
     }
-    .listing_activities {
+    .listing_activities{
         width: 30em;
     }
     footer{
