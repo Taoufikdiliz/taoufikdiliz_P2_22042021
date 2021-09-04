@@ -465,6 +465,9 @@ i.fa.fa-chart-line {
     .best, .best_picture{
         width: 102%;
     }
+    #form ::before {
+        color: white;
+    }
     #accomodation{
         height: auto;
         background-color: white;
@@ -565,7 +568,7 @@ i.fa.fa-chart-line {
         height: 22em;
     }
     footer{
-    padding: 1.7% 27% 10em 60px;
+    padding: 9.7% 17em 10em 60px;
     }
 }
 
@@ -693,10 +696,14 @@ i.fa.fa-chart-line {
     }
     footer{
         margin-right: -160px;
-        padding-right: 12em;
+        padding-right: 12.5em;
+    }
+    footer li{
+        font-size: 20px;
     }
 }
 
+/* Pixel 2 */
 @media (max-width: 411px){
     .filtered.familia {
         position: absolute;
@@ -704,6 +711,7 @@ i.fa.fa-chart-line {
     }
 }
 
+/* Iphone 6/7/8 */
 @media (max-width: 375px){
     footer {
         padding-right: 15em;
@@ -713,12 +721,14 @@ i.fa.fa-chart-line {
     }
 }
 
+/* Moto G4 */
 @media (max-width: 360px){
     #info .subtitle {
         min-inline-size: max-content;
     }
 }
 
+/* Iphone 5/SE */
 @media (max-width: 320px){
     main {
         margin-top: 27em;
@@ -728,12 +738,15 @@ i.fa.fa-chart-line {
     }
 }
 
+/* Galaxy fold */
 @media (max-width: 280px){
     #part_one p{
-            min-width: max-content;
-        }
+        min-width: max-content;
     }
     footer{
-        padding-right: 19em;
+       padding-right: 19em;
+    }
+    footer li{
+        width: max-content;
     }
 }
