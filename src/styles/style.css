@@ -73,7 +73,7 @@ p{
     display: flex;
     align-items: center;
 }
-#form ::before{
+i.fa.fa-map-marker-alt.mapi {
     color: black;
 }
 .mapi{
@@ -330,7 +330,7 @@ i.fa.fa-chart-line {
     justify-content: space-between;
     margin-top: 45px;
 }
-.listing_activities img:hover{
+.column_100:hover, .img_60:hover, .img_40:hover {
     transition: transform 100ms;
     transform: scale(1.1);
 }
@@ -464,9 +464,6 @@ footer li:hover{
     }
     .best, .best_picture{
         width: 102%;
-    }
-    #form ::before{
-        color: white;
     }
     #accomodation{
         height: auto;
@@ -639,6 +636,12 @@ footer li:hover{
 @media (max-width: 414px){
     h2{
         font-size: 30px;
+    }
+    .mapi {
+        padding: 0 20px 0 20px;
+    }
+    input {
+        width: 300px;
     }
     .filtered_listing{
         margin-left: -30px;
