@@ -294,7 +294,7 @@ i.fa.fa-chart-line{
 }
 .best img{
     width: 45%;
-    height: auto;
+    height: 18em;
     border-radius: 25px 0 0 25px;
     object-fit: cover;
 }
@@ -617,7 +617,4 @@ footer li:hover{
     footer li{
         width: max-content;
     }
-}
-
-
 }
