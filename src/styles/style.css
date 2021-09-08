@@ -585,14 +585,14 @@ footer li:hover{
     h2{
         font-size: 18px;
     }
-    .filtered.familia {
+    .filtered.familia{
         position: relative;
         left: 25px;
     }
-    main {
+    main{
         margin-top: 25em;
     }
-    .listing_activities {
+    .listing_activities{
         width: 134%;
     }
 }
@@ -602,13 +602,13 @@ footer li:hover{
     #part_one p{
         min-width: max-content;
     }
-    aside {
+    aside{
         width: 26.5em;
     }
-    .habitat_picture {
+    .habitat_picture{
         width: 187%;
     }
-    .listing_activities {
+    .listing_activities{
         width: 227%;
     }
     footer{
