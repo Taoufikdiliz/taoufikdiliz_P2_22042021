@@ -1,51 +1,40 @@
 body{
     font-family: 'Raleway', sans-serif;
     width: 100%;
-    margin: 0;
     color: black;
+    margin: 0;
 }
 a{
-    font-size: 25px;
+    font-size: 21px;
     text-decoration: none;
     color: black;
 }
 h1{
-    font-size: 26px;
-}
-h2{
-    font-size: 25px;
+    font-size: 28px;
 }
 h3{
-    font-size: 23px;
-}
-h4{
-    font-size: 14px;
-}
-p{
-    font-size: 21px;
+    font-size: 22px;
 }
 .header{
     display: grid;
-    width: 98.3%;
     height: 100px;
-    margin-top: 10px;
+    margin: 0px 30px 0px 30px;
 }
 #logo{
     position: absolute;
     height: 65px;
-    margin: 30px 0 0 1.7%;
+    margin-top: 30px;
     grid-area: img;
 }
 .header_nav{
     display: flex;
-    margin: 0px 100px 0 auto;
-    place-content: space-evenly;
+    margin: 0px 75px 0 auto;
     grid-area: nav;
 }
 .header_nav_link{
     padding: 4rem;
     font-weight: 600;
-    margin-left: -50px;
+    margin-left: -75px;
     border-top: 3px transparent solid;
     border-bottom: 3px transparent solid;
 }
@@ -64,31 +53,32 @@ p{
 }
 
 /* Search button */
+
 #part_one{
     width: 100%;
-    height: 22em;
-    margin: 60px 0px 0 1.7%;
+    height: 25em;
+    margin: 70px 0px 0px 30px;
 }
 #form{
     display: flex;
     align-items: center;
-}
-i.fa.fa-map-marker-alt.mapi {
-    color: black;
 }
 .mapi{
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid transparent;
-    width: 57px;
-    height: 65px;
+    width: 55px;
+    height: 50px;
     border-radius: 21px 0px 0px 21px;
     background-color: #f2f2f2;
 }
+i.fa.fa-map-marker-alt.mapi {
+    color: black;
+}
 input{
     width: 245px;
-    height: 65px;
+    height: 54px;
     border-top: 2.5px solid #f2f2f2;
     border-bottom: 2.5px solid #f2f2f2;
     border-left: none;
@@ -104,15 +94,15 @@ input:focus{
 .button{
     display: contents;
 }
-.button ::before{
+.button:focus{
     display: none;
 }
 .search{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10em;
-    height: 63px;
+    width: 150px;
+    height: 52px;
     background-color: #0065fc;
     border-radius: 0px 16px 16px 0px;
     color: white;
@@ -201,7 +191,7 @@ input:focus{
 
 /* Main */
 main{
-    margin: 0 1.7% 0 1.7%;
+    margin: 0 30px 0 30px;
 }
 .accomodation_aside{
     display: flex;
@@ -211,13 +201,12 @@ main{
     height: 75em;
     padding-bottom: 2em;
 }
-/* Part location and popularity */
-#accomodation {
+#accomodation{
     border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
     border-radius: 21px;
     width: 60%;
-    height: 70em;
+    height: 72em;
 }
 span{
     font-weight: 600;
@@ -227,40 +216,42 @@ aside{
     background-color: #f2f2f2;
     border-radius: 21px;
     width: 36.2%;
-    height: 70em;
-} 
+    height: 72em;
+}
+i.fa.fa-chart-line {
+    color: black;
+    position: inherit;
+    margin-right: 40px;
+}
 .position_text{
     margin: 10px 0px 20px 10px;
 }
 #accomodation h2, aside h2{
-    margin: 45px 0px 45px 60px;
-}
-aside h2{
-    margin-left: 30px;
+    margin: 45px 0px 45px 30px;
 }
 #accomodation p{
     margin: -12px 0px 18px 0px;
 }
-.habitat {
-    margin-bottom: 50px;
+.habitat{
+    width: 30%;
+    height: 25em;
 }
 .habitat_listing{
     display: flex;
     justify-content: space-around;
-    margin: 0 20px 0 20px;
     flex-wrap: wrap;
 }
 .habitat_listing img{
-    width: 28.5em;
-    height: 14em;
+    width: 100%;
+    height: 12em;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
 }
 .habitat_picture{
+    height: 22em;
     border: 1px solid white;
     background-color: white;
     border-radius: 25px;
-    padding: 0px 2px 10px 2px;
     margin-bottom: 20px;
     box-shadow: 10px 5px 5px grey;
     cursor: pointer;
@@ -269,24 +260,27 @@ aside h2{
     transition: transform 100ms;
     transform: scale(1.1);
 }
+h3.habitat_description{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
 .additional {
-    margin: 25px 0px 0px 60px;
+    margin: 30px 0px 0px 20px;
 }
 .first_class{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 4em;
 }
-i.fa.fa-chart-line {
+i.fa.fa-chart-line{
     font-size: 32px;
 }
 .best{
-    margin-left: 25px;
+    margin-left: 30px;
 }
 .best_picture{
     display: flex;
-    width: 96%;
+    width: 93%;
     margin-bottom: 43px;
     box-shadow: 0 0 10px white;
     border: 1px solid white;
@@ -299,19 +293,20 @@ i.fa.fa-chart-line {
     transform: scale(1.1);
 }
 .best img{
-    width: 40%;
-    height: 17em;
+    width: 45%;
+    height: auto;
     border-radius: 25px 0 0 25px;
     object-fit: cover;
 }
 .best_description{
     padding: 5px 0px 1px 15px;
 }
-.best_description .star{
-    margin-top: 9em;
+.star{
+    margin-top: 8em;
+    padding-bottom: 15px;
 }
 
-/* Etoiles */
+/* stars */
 .fa, .fas{
     color:#0065fc;
     font-size: 17px;
@@ -321,18 +316,17 @@ i.fa.fa-chart-line {
     font-size: 17px;
 }
 
-/*  Activites */
+/*  Activity */
 #activity{
     width: 100%;
     height: 68em;
-    padding: 0 0 0 10px;
 }
 .listing_activities{
     display: flex;
     justify-content: space-between;
     margin-top: 45px;
 }
-.column_100:hover, .img_60:hover, .img_40:hover {
+.column_100:hover, .img_60:hover, .img_40:hover{
     transition: transform 100ms;
     transform: scale(1.1);
 }
@@ -346,13 +340,13 @@ i.fa.fa-chart-line {
     border-radius: 25px;
     cursor: pointer;
 }
-.column_100 {
+.column_100{
     margin-bottom: 120px;
 }
 .column_100 img{
     height: 50em;
 }
-.img_60 {
+.img_60{
     margin-bottom: 118px;
 }
 .img_60 img{
@@ -381,7 +375,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 77%;
-    padding: 1.7% 23% 10em 60px;
+    padding: 30px 23% 10em 60px;
     background-color: #f2f2f2;
 }
 footer ul{
@@ -399,19 +393,12 @@ footer li:hover{
 
     /* MEDIA QUERIES */
 
-@media (max-width: 2470px){
-    .accomodation_aside{
-        height: 100em;
+@media (max-width: 1100px){
+    h3{
+        font-size: 23px;
     }
-}
-
-@media (max-width: 1700px){
-    #logo {
-        margin: 0 0 0 1.7%
-    }
-    .accomodation_aside{
-        flex-direction: column-reverse;
-        height: auto;
+    #logo{
+        margin: 0;
     }
     #registration{
         order: 1;
@@ -436,69 +423,68 @@ footer li:hover{
         border-bottom: 2px solid #0065FC;
         color: #0065fc;
     }
-    .search{
-        display: none;
+    p.search{
+        color: transparent;
+        width: 3em;
     }
-    .button ::before{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70px;
-        height: 60px;
-        border-radius: 16px 16px 16px 16px;
-        background-color: #0065FC;
+    i.fa.fa-search.glass{
+        font-size: 19px;
+        color: white;
+        position: relative;
+        left: -38px;
     }
-    input{
-        width: 345px;
-        height: 62px;
-        font-weight: 800;
-        font-size: 21px;
+    #part_one{
+        height: 30em;
     }
-    .mapi{
-        width: 70px;
-        height: 60px;
-        color: black;
+    #filters{
+        display: block;
     }
     aside, #accomodation{
         width: 100%;
-        padding: 0px 100px 0 0;
+        padding: 0px 110px 0 0;
         margin: 0 0 0 -25px;
         border-radius: 0;
     }
-    .best, .best_picture{
-        width: 102%;
+    i.fa.fa-chart-line{
+        margin-right: -70px;
+    }
+    aside{
+        height: 70em;
+    }
+    .best_picture{
+        width: 107%;
+        height: 17em;
+    }
+    .accomodation_aside{
+        flex-direction: column-reverse;
+        height: auto;
     }
     #accomodation{
-        height: auto;
-        background-color: white;
+        margin-top: 7em;
+        background: white;
+        border: none;
     }
-    #accomodation h2, aside h2{
-        margin: 45px 0px 45px 25px;
+    .habitat {
+        width: 65em;
+        height: 29em;
+        margin-left: 30px;
+        justify-content: center;
+        margin-right: -60px;
     }
-    .habitat_listing{
-        flex-direction: column;
-        width: 101%;
+    h3.habitat_description {
+        font-size: 22px;
     }
-    .habitat_listing img{
-        width: 100%;
-        height: 25em;
-    }
-    .habitat_picture{
-        width: 104%;
+    #activity {
+        margin-top: 120em;
+        height: 180em;
     }
     .listing_activities{
         flex-direction: column;
-    }
-    .additional{
-        margin: 25px 0px 0px 30px;
-    }
-    #activity{
-        height: auto;
-        margin-top: 7em;
+        width: 106%;
     }
     #activity img{
         width: 100%;
-        height: 29em;
+        height: 15em;
     }
     .column_100, .column_60_40{
         width: 100%;
@@ -507,237 +493,107 @@ footer li:hover{
     .img_60{
         margin-bottom: 70px;
     }
+    .position_text{
+        font-size: 20px;
+    }
     footer{
         flex-direction: column;
     }
 }
-   
-@media (max-width: 1100px){
-    #filters{
-        display: block;
-    }
-    main{
-        margin-top: 6em;
-    }
-    .listing_activities {
-        width: 104%;
-    }
-}
 
 /* Size Ipad Pro 1024px */
- @media (max-width: 1024px){
-    .header{
-        padding-right: 5%;
-        margin: 5% 0% 0% 5%;
-    }
-    #part_one{
-        margin: 60px 0px 0 5%;
-    }
-    #form{
-    padding: 1.7% 27% 3em 60px;
-    }
+@media (max-width: 1040px){
     main{
-        margin-top: 18em;
+        margin-top: 70px;
     }
-    aside{
-        margin: 0;
-        margin-left: -10px;
-        padding-left: 20px;
-    }
-    .best_picture{
-        width: auto;
-    }
-    .habitat_picture{
-        width: 100%;
-        margin-left: 4%;
-    }
-    #accomodation h2{
-        margin: 45px 0px 45px 60px;
-    }
-    .additional{
-        margin: 30px 0px 0px 65px;
-    }
-    section#activity{
-        margin-left: 30px;
-        width: 97%;
-    }
-    #activity img{
-        height: 22em;
-    }
-    footer{
-    padding: 9.7% 17em 10em 60px;
+    i.fa.fa-chart-line {
+        margin-right: -30px;
     }
 }
 
 /* Ipad 768px */
 @media (max-width: 768px){
-    h2 {
-        font-size: 32px;
-    }
-    #registration{
-        margin: 30px -15% 0px 0px;
-    }
     main{
-        margin-top: 14em;
+        margin-top: 100px;
     }
-    aside{
-        width: max-content;
+    #accomodation {
+        margin-top: 16em;
     }
-    #accomodation{
-        margin-top: 45px;
-        border: none;
+    aside {
+        height: 74em;
     }
-    .habitat_picture{
-        width: 50em;
-    }
-    .habitat_listing img{
-        height: 17em;
-    }
-    .position_text{
-        margin: 25px 0px 20px 40px;
-    }
-    .additional{
-        font-size: 25px;
-    }
-    .listing_activities{
-        width: 50em;
-    }
-}
-    
-/* Surface Duo 540px */
-@media (max-width: 540px){
-    #form{
-        padding: 3.7% 0% 3em 2px;
-    }
-    main{
-        margin-top: 24em;
-    }
-    aside{
-        width: inherit;
-    }
-    .habitat_picture{
-        width: 34em;
-    }
-    .listing_activities{
+    .best{
         width: 100%;
     }
-    .card_longchamp{
-        padding-top: 90px;
-    }
-    #activity img{
-        height: 15em;
-    }
-    .card_frioul{
-        padding-top: 20px;
-    }
-    footer{
-        padding: 55px 170px 60px 55px;
+    aside {
+        height: 55em;
     }
 }
- 
-    /* Iphone 6/7/8 Plus 414px */
+/* Surface Duo 540px */
+@media (max-width: 540px){
+    main {
+        margin-top: 14em;
+    }
+    .best_picture {
+        height: 12em;
+    }
+    .star {
+        margin-top: 2em;
+}
+    footer {
+        padding: 30px 147px 6em 30px;
+    }
+    
+/* Iphone 6/7/8 Plus 414px */
 @media (max-width: 414px){
-    h2{
-        font-size: 30px;
-    }
-    .mapi {
-        padding: 0 20px 0 20px;
-    }
-    input {
-        width: 300px;
-    }
     .filtered_listing{
         margin-left: -30px;
     }
     .familia{
         display: block;
         height: 53px;
-        border-top: 3px solid #F2F2F2;
-        border-right: 3px solid #F2F2F2;
-        border-bottom: 3px solid #F2F2F2;
-        border-radius: 44px;
-        background-color: white;
-        cursor: pointer;
-        margin-left: 6px;
-        padding-right: 44px;
-        }
+        margin-left: -5px;
+        padding-right: 30px;
+    }
     .familia .filter_subtitle{
         position: relative;
         left: 47px;
         top: -37px;
     }
-    #info .subtitle{
-        font: caption;
-    }
-    main{
-        width: 23em;
-        margin-top: 23em;
-    }
-    .accomodation_aside{
-        width: 28.5em;
-    }
-    .best img{
-        width: 12em;
+    i.fa.fa-chart-line{
+        margin-right: -50px;
     }
     .best_picture{
-        width: 30em;
-        height: 17em;
+        height: 11em;
     }
-    .best_description .star{
-        margin-top: 7em;
+    .star{
+        margin: 0;
     }
-    .habitat_picture{
-        width: 30em;
-        height: 21em;
-        margin-left: 35px;
+    aside {
+        width: 22.5em;
     }
-    .habitat_listing img{
-        height: 13em;
+    .habitat_picture {
+        width: 111%;
     }
-    .listing_activities{
-        width: 30em;
-    }
-    footer{
-        margin-right: -160px;
-        padding-right: 12.5em;
-    }
-    footer li{
-        font-size: 20px;
-    }
-}
-
-/* Pixel 2 */
-@media (max-width: 411px){
-    .filtered.familia {
-        position: absolute;
-        margin: 20px 0px 0px 19em;
+    .listing_activities {
+        width: 126%;
     }
 }
 
 /* Iphone 6/7/8 */
 @media (max-width: 375px){
-    footer {
-        padding-right: 15em;
+    h2{
+        font-size: 18px;
     }
-    main{
-        margin-top: 27em;
+    .filtered.familia {
+        position: relative;
+        left: 25px;
     }
-}
-
-/* Moto G4 */
-@media (max-width: 360px){
-    #info .subtitle {
-        min-inline-size: max-content;
-    }
-}
-
-/* Iphone 5/SE */
-@media (max-width: 320px){
     main {
-        margin-top: 27em;
+        margin-top: 25em;
     }
-    footer {
-        padding-right: 17em;
+    .listing_activities {
+        width: 134%;
     }
 }
 
@@ -746,10 +602,22 @@ footer li:hover{
     #part_one p{
         min-width: max-content;
     }
+    aside {
+        width: 26.5em;
+    }
+    .habitat_picture {
+        width: 187%;
+    }
+    .listing_activities {
+        width: 227%;
+    }
     footer{
        padding-right: 19em;
     }
     footer li{
         width: max-content;
     }
+}
+
+
 }
