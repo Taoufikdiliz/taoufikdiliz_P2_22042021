@@ -464,17 +464,17 @@ footer li:hover{
         background: white;
         border: none;
     }
-    .habitat {
+    .habitat{
         width: 65em;
         height: 29em;
         margin-left: 30px;
         justify-content: center;
         margin-right: -60px;
     }
-    h3.habitat_description {
+    h3.habitat_description{
         font-size: 22px;
     }
-    #activity {
+    #activity{
         margin-top: 120em;
         height: 180em;
     }
@@ -506,7 +506,7 @@ footer li:hover{
     main{
         margin-top: 70px;
     }
-    i.fa.fa-chart-line {
+    i.fa.fa-chart-line{
         margin-right: -30px;
     }
 }
@@ -516,7 +516,7 @@ footer li:hover{
     main{
         margin-top: 100px;
     }
-    #accomodation {
+    #accomodation{
         margin-top: 16em;
     }
     aside {
@@ -525,22 +525,23 @@ footer li:hover{
     .best{
         width: 100%;
     }
-    aside {
+    aside{
         height: 55em;
     }
 }
+
 /* Surface Duo 540px */
 @media (max-width: 540px){
     main {
         margin-top: 14em;
     }
-    .best_picture {
+    .best_picture{
         height: 12em;
     }
-    .star {
+    .star{
         margin-top: 2em;
 }
-    footer {
+    footer{
         padding: 30px 147px 6em 30px;
     }
 }
@@ -570,13 +571,13 @@ footer li:hover{
     .star{
         margin: 0;
     }
-    aside {
+    aside{
         width: 22.5em;
     }
-    .habitat_picture {
+    .habitat_picture{
         width: 111%;
     }
-    .listing_activities {
+    .listing_activities{
         width: 126%;
     }
 }
