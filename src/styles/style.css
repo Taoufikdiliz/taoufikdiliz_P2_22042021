@@ -589,11 +589,18 @@ footer li:hover{
     .best_picture{
         height: 20em;
     }
+    .best img{
+        height: auto;
+    }
     .star{
         margin: 0;
     }
     aside{
         width: 23.5em;
+        height: 81em;
+    }
+    #accomodation {
+        margin-top: 3em;
     }
     .habitat_picture{
         width: 111%;
