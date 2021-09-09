@@ -522,10 +522,7 @@ footer li:hover{
         margin-top: 100px;
     }
     #accomodation{
-        margin-top: 16em;
-    }
-    aside{
-        height: 74em;
+        margin-top: 6em;
     }
     i.fa.fa-chart-line{
         margin-right: -70px;
@@ -534,7 +531,7 @@ footer li:hover{
         width: 100%;
     }
     aside{
-        height: 55em;
+        height: 72em;
     }
 }
 
@@ -545,6 +542,9 @@ footer li:hover{
     }
     main{
         margin-top: 14em;
+    }
+    .best img{
+        height: auto;
     }
     .best_picture{
         height: 12em;
@@ -587,7 +587,7 @@ footer li:hover{
         margin-right: -50px;
     }
     .best_picture{
-        height: 20em;
+        height: 15em;
     }
     .best img{
         height: auto;
@@ -597,7 +597,7 @@ footer li:hover{
     }
     aside{
         width: 23.5em;
-        height: 81em;
+        height: 66em;
     }
     #accomodation {
         margin-top: 3em;
@@ -618,8 +618,11 @@ footer li:hover{
     #registration{
         right: -90px;
     }
+    h1 {
+        font-size: 23px;
+    }
     h2{
-        font-size: 18px;
+        font-size: 21px;
     }
     .filtered.familia{
         position: relative;
