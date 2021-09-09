@@ -402,8 +402,13 @@ footer li:hover{
     }
     #registration{
         order: 1;
-        margin: 20px 10px 0 0;
         font-size: 25px;
+        position: absolute;
+        right: 30px;
+        top: 70px
+    }
+    nav.header_nav {
+        margin-top: 110px;
     }
     .header{
         grid-template-areas: "img . note" "nav nav nav";
@@ -619,4 +624,4 @@ footer li:hover{
     footer li{
         width: max-content;
     }
-}
+} 
