@@ -527,6 +527,9 @@ footer li:hover{
     aside {
         height: 74em;
     }
+    i.fa.fa-chart-line {
+        margin-right: -70px;
+    }
     .best{
         width: 100%;
     }
@@ -537,6 +540,9 @@ footer li:hover{
 
 /* Surface Duo 540px */
 @media (max-width: 540px){
+    #registration {
+        right: -10px;
+    }
     main {
         margin-top: 14em;
     }
@@ -553,6 +559,16 @@ footer li:hover{
     
 /* Iphone 6/7/8 Plus 414px */
 @media (max-width: 414px){
+    #logo{
+        height: 58px;
+        margin: 14px 0px 0px -10px;
+    }
+    nav.header_nav {
+        margin-top: 67px;
+    }
+    #registration {
+        right: -45px;
+    }
     .filtered_listing{
         margin-left: -30px;
     }
@@ -577,7 +593,7 @@ footer li:hover{
         margin: 0;
     }
     aside{
-        width: 22.5em;
+        width: 23.5em;
     }
     .habitat_picture{
         width: 111%;
@@ -585,10 +601,15 @@ footer li:hover{
     .listing_activities{
         width: 126%;
     }
+    footer li {
+        font-size: 19px;
 }
 
 /* Iphone 6/7/8 */
 @media (max-width: 375px){
+    #registration {
+        right: -90px;
+    }
     h2{
         font-size: 18px;
     }
@@ -599,18 +620,86 @@ footer li:hover{
     main{
         margin-top: 25em;
     }
+    .best {
+        width: 103%;
+    }
+    .best_picture{
+        height: 15em;
+    }
+    .best img {
+        height: auto;
+    }
+    .habitat_picture {
+        width: 120%;
+    }
     .listing_activities{
         width: 134%;
     }
+    footer {
+        padding: 30px 174px 6em 30px;
+    }
+}
+
+/*Galaxie S5 360px */
+@media (max-width: 360px){
+    #registration {
+        /* right: -100px; */
+    }
+    .habitat_picture {
+        width: 126%;
+    }
+    .listing_activities {
+        width: 144%;
+    }
+    footer {
+        padding: 30px 185px 6em 30px;
+    }
+}
+
+/* Iphone 5/SE */
+@media (max-width: 320px){
+    #registration {
+        right: -145px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 22px;
+        width: max-content;
+    }
+    aside {
+        height: 63em;
+    }
+    #accomodation {
+        margin-top: 3em;
+    }
+    .habitat_picture {
+        width: 144%;
+    }
+    .listing_activities {
+        width: 167%;
+    }
+    footer {
+        padding: 30px 216px 6em 30px;
+    }
+
 }
 
 /* Galaxy fold */
 @media (max-width: 280px){
+    #registration {
+        right: -9em;
+    }
+    .header_nav_link {
+        margin-left: -52px;
+    }
     #part_one p{
         min-width: max-content;
     }
-    aside{
-        width: 26.5em;
+    aside {
+        width: 27em;
+        margin-top: -67px;
     }
     .habitat_picture{
         width: 187%;
